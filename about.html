@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "page.css" >
+    <link rel = "stylesheet" href = "style.css" >
+    <title>protfolio</title>
+</head>
+<body>
+  <div class=" main">
+    <header>
+      <h1>BreshnaHamidi</h1>
+      <nav id = nav-bar>
+        <div class = "mobile-menu" id="mobile-menu">
+          <image src="image/menu-img.png" id ="menu-img">
+          <ul >
+            <li id="home"><a href ="index.html"  data-target="home" class="option-menu"><img src ="image/home.png" id="icon-menu">Home</a></li>
+              <li><a href ="about.html" class="option-menu option-menu-1" data-target="about"><img src ="image/person.png" id="icon-menu" >About Me</a></li>
+              <li><a href = "education.html" class="option-menu" data-target=""><img src ="image/education.png" id="icon-menu">Education</a></li>
+              <li><a href = "project.html"  class="option-menu" data-target=""><img src ="image/Vector (1).png" id="icon-menu">projects</a></li>
+              <li><a href = "skills.html"  class="option-menu" data-target=""><img src ="image/skills.png" id="icon-menu">Skills</a></li>
+              <li><a href = "Contact.html"  class="option-menu" data-target=""><img src ="image/phone.png" id="icon-menu">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class = "ham-menu" id="ham-menu">
+          <span ></span>
+          <span ></span>
+          <span ></span>
+        </div>
+      </nav>
+    </header>
+    <body>
+<section id="about-me">
+  <div class="about-content" id="about-content">
+
+  </div>
+</section>
+<footer>
+  <div id ="social-media-footer">
+    <a href="https://www.facebook.com/profile.php?id=100072788701860&mibextid=ZbWKwL"><img src = "image/fb-icon.png"></imge></a>
+    <a href="https://www.linkedin.com/in/breshna-hamidi-67699a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src = "image/in-icon.png"></imge></a>
+    <a href=" https://wa.me/message/L4LV3PM672H7P1 "><img src = "image/wsp icon.png"></imge></a>
+    <a href="#"><img src = "image/Gb-icon.png"></imge></a>
+  </div>
+</footer>
+
+
+
+<script src="page.js"></script>
+<script>
+const hamMenu = document.querySelector('.ham-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+});
+
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+      document.querySelector(".mobile-menu.active").classList.add('hidden');
+      document.querySelector(".ham-menu.active span:nth-child(1)").classList.add('hidden');
+      document.querySelector(".ham-menu.active span:nth-child(3)").classList.add('hidden');
+  });
+});
+
+
+
+
+</script>
+    </body>
+    </html>

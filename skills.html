@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "page.css" >
+    <link rel = "stylesheet" href = "style.css" >
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class=" main">
+        <header>
+          <h1>BreshnaHamidi</h1>
+          <nav id = nav-bar>
+            <div class = "mobile-menu" id="mobile-menu">
+              <image src="image/menu-img.png" id ="menu-img">
+              <ul id = "ul-menu">
+                <li id="home"><a href ="index.html"  data-target="home" class="option-menu"><img src ="image/home.png" id="icon-menu"> home</a></li>
+              <li><a href ="about.html" class="option-menu" data-target="about"><img src ="image/person.png" id="icon-menu" >about</a></li>
+              <li><a href = "education.html" class="option-menu" data-target=""><img src ="image/education.png" id="icon-menu"> Education</a></li>
+              <li><a href = "project.html"  class="option-menu" data-target=""><img src ="image/Vector (1).png" id="icon-menu"> project</a></li>
+              <li><a href = "skills.html"  class="option-menu option-menu-1" data-target=""><img src ="image/skills.png" id="icon-menu"> skills</a></li>
+              <li><a href = "contact.html"  class="option-menu" data-target=""><img src ="image/phone.png" id="icon-menu"> Contact me</a></li>
+          </ul>
+            </div>
+            <div class = "ham-menu" id="ham-menu">
+              <span ></span>
+              <span ></span>
+              <span ></span>
+            </div>
+          </nav>
+        </header>
+        <section id="skill">
+          <div class="skills-chart" id="skills-chart">
+            <div class="space-skill">
+              <h2>My Skills</h2>
+              <P>Explore What I Can Do!</P>
+            </div>
+              <div class="lang-skills">
+              
+              </div>
+              <div class="soft-skills"></div>
+          </div>
+        </section>
+        <footer>
+          <div id ="social-media-footer">
+            <a href="https://www.facebook.com/profile.php?id=100072788701860&mibextid=ZbWKwL"><img src = "image/fb-icon.png"></imge></a>
+            <a href="https://www.linkedin.com/in/breshna-hamidi-67699a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src = "image/in-icon.png"></imge></a>
+            <a href=" https://wa.me/message/L4LV3PM672H7P1 "><img src = "image/wsp icon.png"></imge></a>
+            <a href="#"><img src = "image/Gb-icon.png"></imge></a>
+          
+        </footer>
+  
+          <script>
+const hamMenu = document.querySelector('.ham-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+});
+
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+      document.querySelector(".mobile-menu.active").classList.add('hidden');
+      document.querySelector(".ham-menu.active span:nth-child(1)").classList.add('hidden');
+      document.querySelector(".ham-menu.active span:nth-child(3)").classList.add('hidden');
+  });
+});
+
+
+            const softSkillsData = [
+  { skill: 'Team work', perDiv: '', percentage: '78%' },
+  { skill: 'Clean code', perDiv: '', percentage: '87%' },
+  { skill: 'Code review', perDiv: '' , percentage: '78%'},
+  { skill: 'Time Management', perDiv: '', percentage:'78%' },
+  { skill: 'Multi Tasking', perDiv: '', percentage: '78%' },
+  { skill: 'Crisis Management', perDiv: '', percentage: '78%' }
+];
+
+const images = ['html-skill.png', 'css-skill.png', 'js-skill.png'];
+
+const skillChart =document.getElementById('skills-chart');
+const softSkillContainer = document.querySelector('.soft-skills');
+const langSkillContainer = document.querySelector('.lang-skills');
+
+
+images.forEach(image => {
+    const img = document.createElement('img');
+    img.src = `image/${image}`;
+    langSkillContainer.appendChild(img);
+    skillChart.appendChild(langSkillContainer);
+});
+
+
+softSkillsData.forEach(skillData => {
+  const skillDiv = document.createElement('div');
+  const skillSpan = document.createElement('span');
+const skillperDiv = document.createElement('div');
+const skillPercentage = document.createElement('div');
+
+  skillSpan.textContent = skillData.skill;
+  skillperDiv.textContent = skillData.perDiv;
+  skillPercentage.textContent = skillData.percentage;
+  
+  skillDiv.appendChild(skillSpan);
+  skillDiv.appendChild(skillperDiv);
+  skillperDiv.appendChild(skillPercentage);
+  
+
+  softSkillContainer.appendChild(skillDiv);
+  skillChart.appendChild(softSkillContainer);
+});
+
+
+          </script>
+</body>
+</html>

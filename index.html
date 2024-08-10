@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css" >
+    <title>protfolio</title>
+</head>
+<body>
+  <div class=" main">
+    <header>
+      <h1>BreshnaHamidi</h1>
+      <nav id = nav-bar>
+        <div class = "mobile-menu desktop-menu" id="mobile-menu">
+          <image src="image/menu-img.png" id ="menu-img">
+          <ul >
+            <li id="home"><a href ="index.html"  data-target="home" class="option-menu option-menu-1"><img src ="image/home.png" id="icon-menu">Home</a></li>
+              <li><a href ="about.html" class="option-menu  " data-target="about"><img src ="image/person.png" id="icon-menu" >About Me</a></li>
+              <li><a href = "education.html" class="option-menu" data-target=""><img src ="image/education.png" id="icon-menu">Education</a></li>
+              <li><a href = "project.html"  class="option-menu" data-target=""><img src ="image/Vector (1).png" id="icon-menu">projects</a></li>
+              <li><a href = "skills.html"  class="option-menu" data-target=""><img src ="image/skills.png" id="icon-menu">Skills</a></li>
+              <li><a href = "contact.html"  class="option-menu" data-target=""><img src ="image/phone.png" id="icon-menu">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class = "ham-menu" id="ham-menu">
+          <span ></span>
+          <span ></span>
+          <span ></span>
+        </div>
+      </nav>
+    </header>
+    <section id="home" class="home">
+      <div class="home-conitner">
+        <div class="image-div"><img src = ""></div>
+        <div class="home-description">
+        <div class="short-interduce">
+          <h1>Hi, I am Breshna</h1>
+          <h2>Web Developer</h2>
+          <p>i am great best and
+           i am great best and i am great best and
+           i am great best and i am great best and
+           i am great best and i am great best and
+           i am great best and i am great best and
+          </p>
+        </div>
+        <div id ="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100072788701860&mibextid=ZbWKwL"><img src = "image/fb-icon.png"></imge></a>
+          <a href="https://www.linkedin.com/in/breshna-hamidi-67699a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src = "image/in-icon.png"></imge></a>
+          <a href=" https://wa.me/message/L4LV3PM672H7P1 "><img src = "image/wsp icon.png"></imge></a>
+          <a href="#"><img src = "image/Gb-icon.png"></imge></a>
+        </div>
+        <div id="btn">
+          <button class="cv-btn" type="button">Download Cv</button>
+          <button  onclick="hideShow()" class="read-btn" id="read-btn">Read More</button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div  class ="main-1" id="main-1">
+      <section id = "about">
+        <div class= head-1>
+          <h2>About me</h2>
+          <p>Get to know me better</p>
+        </div>
+        <div class="about-div">
+        <div class="img-div-about">
+          <img src="">
+        </div>
+        <div class="p-cv">
+          <p>i am the best i am the besti am the besti
+            am the besti am the besti am the besti
+             am the besti am the besti am the besti am the besti am the best
+             i am the best i am the besti am the besti
+             am the besti am the besti am the besti
+              am the besti am the besti am the besti am the besti am the best
+            
+            
+            </p>
+          <a href="" id="cv-link"><button type="button" id="cv-dwlod">Dowmload CV</button></a>
+        </div>
+      </div>
+      </section>
+      <section id="education" class="education">
+        <div class="certificate-page" id="certificate-page">
+          <h1>certificates</h1>
+    <p>Here are the list of my achivement</p>
+          <div class="certificate-continer" id="certificate-continer"></div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="skill-chart" id="skill-chart">
+          <h2>My Skills</h2>
+  <P>explore What I Can Do!</P>  <div class="skill-border">
+    <div class="title-skill  hidden"> 
+      <span>Language</span>
+      <span>professional skills</span>
+      <span>soft skills</span>
+    </div>
+    <div class="skills-continer" id="skills-continer">
+            
+      <div class="lang-skill"></div>
+    <div class="soft-skill"></div>
+  </div>
+  </div>
+            
+        </div>
+      </section>
+      <section class="project" id="project">
+        <div class="project-list" id="project-list">
+          <h1>Project</h1>
+<p class="project-list-p">here are my project I have done it recently</P>
+          <div class="project-continer" id="project-continer"></div>
+        </div>
+        <button class="project-see-more">See More</button>
+      </section>
+  
+    <section id="contact-page" class="contact-page">
+        <h2>Let's Get in Touch</h2>
+      <p>I would always Love to hear from you</p>
+      <div class="form-contact">
+        <div class="form-div">
+          <h1>Contact me</h1>
+          <form action="https://formspree.io/f/xblrodky" method="POST" id="contactForm">
+            <label>Name</label>
+            <input type="text"  id="name" placeholder="enter your name" required  maxlength="30">
+            <label>Email</label>
+            <input type="email" placeholder="enter your email" required>
+            <label>Message</label>
+            <textarea name=""
+            id="message"
+            placeholder="massage"
+            required  maxlength="500"
+   ></textarea>
+            <button type="submit" class="submit">Send</button>
+            <p id="error" style="color: red; display: none;">Please fill out all fields correctly.</p>
+
+          </form>
+        </div>
+
+
+
+
+  
+
+
+
+
+        <div class="contact-me">
+          <h1>Feel free to contact me!</h1>
+          
+          <ul>
+            <li> <img src="image/email.png"><span class="contact-para">Email:<a href="">breshna2004@gmail.com</a></span></li>
+            <li><img src="image/phone-1.png"> <span class="contact-para">Phone:<a href="">+93744723133</a></span> </li>
+            <li> <img src="image/clock.png"><span class="contact-para">08:00 MA-04:00 PM</span></li>
+          </ul>
+         
+
+        </div>
+      </div>
+      
+<div>
+</div>
+    </section>
+    <footer>
+      <div class ="social-media-footer" >
+        <a href="#"><img src = "image/fb-icon.png"></a>
+        <a href="#"><img src = "image/in-icon.png"></a>
+        <a href="#"><img src = "image/wsp icon.png"></a>
+        <a href="#"><img src = "image/Gb-icon.png"></a>
+      </div>
+    </footer>
+    </div>
+  </div>
+  
+  <script src = "script.js"></script>
+</body>
+
+</html>
+
