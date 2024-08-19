@@ -9,17 +9,31 @@
 </head>
 <body>
     <header>
+      <div class="popup1" id="popup1">
+      <div class="popup1-content">
+          <span class="close1-btn" id="close1Btn">&times;</span>
+          <h1>Hi,I am Bershna <br>Web Developer</h1>
+  
+          <div class="slider">
+            <div class="slide actives"><img src="image/pro-6.jfif" alt="Image 1"></div>
+            <div class="slide"><img src="image/pro-2.jfif" alt="Image 2"></div>
+            <div class="slide"><img src="image/pro-3.jfif" alt="Image 3"></div>
+            <div class="slide"><img src="image/pro-4.jfif" alt="Image 2"></div>
+            <div class="slide"><img src="image/pro-5.jfif" alt="Image 3"></div>
+            <div class="circles"></div>
+          </div>
+      </div>
+  </div>
         <h1>BreshnaHamidi</h1>
         <nav id = nav-bar>
           <div class = "mobile-menu" id="mobile-menu">
-            <image src="image/menu-img.png" id ="menu-img">
+            <image src="image/menu-img.png" id ="menuImg" class="menu-img">
             <ul id = "ul-menu">
-              <li id="home"><a href ="index.html"  data-target="home" class="option-menu"><img src ="image/home.png" id="icon-menu"> home</a></li>
-              <li><a href ="about.html" class="option-menu" data-target="about"><img src ="image/person.png" id="icon-menu" >about</a></li>
-              <li><a href = "education.html" class="option-menu" data-target=""><img src ="image/education.png" id="icon-menu"> Education</a></li>
-              <li><a href = "project.html"  class="option-menu option-menu-1" data-target=""><img src ="image/Vector (1).png" id="icon-menu"> project</a></li>
-              <li><a href = "skills.html"  class="option-menu" data-target=""><img src ="image/skills.png" id="icon-menu"> skills</a></li>
-              <li><a href = "Contact.html"  class="option-menu" data-target=""><img src ="image/phone.png" id="icon-menu"> Contact me</a></li>
+              <li id="home"><a href ="index.html"  data-target="home" class="option-menu"><img src ="image/home.png" id="icon-menu"> Home</a></li>
+              <li><a href ="about.html" class="option-menu" data-target="about"><img src ="image/person.png" id="icon-menu" >About Me</a></li>
+              <li><a href = "project.html"  class="option-menu option-menu-1" data-target=""><img src ="image/Vector (1).png" id="icon-menu"> Project</a></li>
+              <li><a href = "skills.html"  class="option-menu" data-target=""><img src ="image/skills.png" id="icon-menu"> Skills</a></li>
+              <li><a href = "Contact.html"  class="option-menu" data-target=""><img src ="image/phone.png" id="icon-menu"> Contact Me</a></li>
           </ul>
           </div>
           <div class = "ham-menu" id="ham-menu">
@@ -63,74 +77,124 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
   });
 });
 
+
+
+const popup1 = document.getElementById('popup1');
+const popup1Btn = document.getElementById('menuImg');
+const close1Btn = document.getElementById('close1Btn');
+
+popup1Btn.addEventListener('click', function() {
+    popup1.style.display = 'block';
+});
+
+close1Btn.addEventListener('click', function() {
+    popup1.style.display = 'none';
+});
+
+
+
+
+const slides = document.querySelectorAll('.slide');
+const circles = document.querySelector('.circles');
+
+slides.forEach((slide, index) => {
+  const circle = document.createElement('div');
+  circle.classList.add('circle');
+  circle.addEventListener('click', () => {
+    setActiveSlide(index)
+    ;
+  
+  });
+  circles.appendChild(circle);
+});
+
+let currentSlide = 0;
+setActiveSlide(currentSlide);
+
+function setActiveSlide(index) {
+  slides[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].style.backgroundColor ='white';
+  currentSlide = index;
+  slides[currentSlide].classList.add('actives');
+  circles.children[currentSlide].classList.add('actives');
+  circles.children[currentSlide].style.backgroundColor ='black';
+}
+
+
+
+
+
 // project popuo
 
 const projectData = [
   {
     image:"image/covert-p.png",
-    titile:"Cash Regsiter",
-    description:"Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0",
+    titile:"Roman Numerals Converter",
+    description:"A web app that converts numbers to Roman numerals and checks if they are even or odd.",
     button:"See More",
-    longDescription: "Description of the project one ... 0",
+    longDescription: "The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
     technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "#",
-    sourceLink: "#",
+    liveLink: "https://breshnahamidi20.github.io/roman-numeral-converted/",
+    sourceLink: "https://github.com/Breshnahamidi20/roman-numeral-converted",
   },
 
   {
     image:"image/pokemo-p.png",
-    titile:"Pokemon",
-    description:"",
+    titile:"The Pokémon Search App",
+    description:"A web application that allows users to search for Pokémon by name or ID.",
     button:"See More",
-    longDescription: "Description of the project one ... 1",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
+    longDescription: "The Pokémon Search App is a web application designed to allow users to search for Pokémon and view their details. The app interacts with the Pokémon API to fetch real-time data about various Pokémon, including their names, types, abilities, and stats. Users can type the name of any Pokémon into the search bar and retrieve detailed information about that Pokémon.The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
     liveLink: "https://breshnahamidi20.github.io/pokemon/",
     sourceLink: "https://github.com/Breshnahamidi20/pokemon",
   },
 
   {
     image:"image/number-p.png",
-    titile:"PalandRoom",
-    description:"",
+    titile:"Phone Validator App",
+    description:"The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.",
     button:"See More",
-    longDescription: "Description of the project one ... 3",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "#",
-    sourceLink: "#",
+    longDescription: "The Telephone Validator is a web application designed to validate telephone numbers based on various formats and rules. The app allows users to input a telephone number and check if it conforms to the specified format, handling international codes, area codes, and local numbers.The app uses JavaScript to perform telephone number validation and format checking. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across various devices.",
+    liveLink: "//breshnahamidi20.github.io/phone-number-validator-1/",
+    sourceLink: "//github.com/Breshnahamidi20/phone-number-validator-1",
+
     
   },
 
   {
+
     image:"image/form-p.png",
     titile:"Form Register",
-    description:"",
+    description:"The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.",
     button:"See More",
-    longDescription: "Description of the project one ... 2",
+    longDescription: "The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers after a transaction. It ensures accurate calculations and provides a detailed breakdown of the change to be given, including denominations.The app uses JavaScript to perform calculations and manage transactions. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.",
     technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "#",
-    sourceLink: "#",
+    liveLink: "//breshnahamidi20.github.io/phone-number-validator-1/",
+    sourceLink: "//github.com/Breshnahamidi20/phone-number-validator-1",
   },
   {
-    image:"image/number-p.png",
-    titile:"PalandRoom",
-    description:"",
+
+
+    image:"image/palndroom-p.png",
+    titile:"Palindrome Checker",
+    description:"The Palindrome Checker is a web application that allows users to input a string and determine whether it reads the same forwards and backwards, identifying if it is a palindrome.",
     button:"See More",
-    longDescription: "Description of the project one ... 3",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "#",
-    sourceLink: "#",
+    longDescription: "The Palindrome Checker is a web application designed to determine whether a given string is a palindrome. The app allows users to input a string and check if it reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization.The app uses JavaScript to perform palindrome checks and handle string manipulations. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.",
+    liveLink: "//breshnahamidi20.github.io/palindrome-checker/",
+    sourceLink: "//github.com/Breshnahamidi20/palindrome-checker",
     
   },
   {
-    image:"image/number-p.png",
-    titile:"PalandRoom",
-    description:"",
+    image:"image/cash-p.png",
+    titile:"Cash Register",
+    description:"The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers.",
     button:"See More",
-    longDescription: "Description of the project one ... 3",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "#",
-    sourceLink: "#",
+    longDescription: "The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
+    liveLink: "//breshnahamidi20.github.io/cash-register/",
+    sourceLink: "//github.com/Breshnahamidi20/cash-register",
     
+
+
   }
 ];
 
@@ -139,14 +203,14 @@ const projectsCard = document.getElementById('projects-card');
 
 
 // Function to create and show the popup
-function openPopup(longDescription, titile, technologys, liveLink, sourceLink ) {
+function openPopup(longDescription, titile, image, liveLink, sourceLink) {
   const popup = document.createElement("div");
   popup.classList.add("popup");
   popup.innerHTML = `
     <div class="popup-content">
     <h2>${titile}</h2>
+    <img src=${image}>
       <p>${longDescription}</p>
-      <p>${technologys}</p>
       <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
       <a href="${sourceLink}"><button class="source-link">source code</button></a>
     </div>
@@ -169,7 +233,7 @@ projectData.forEach(project => {
 
   // Add event listener to "See More" button
   projectsElement.querySelector(".openPopupBtn").addEventListener("click", () => {
-    openPopup(project.longDescription, project.titile, project.technologys,project.liveLink, project.sourceLink);
+    openPopup(project.longDescription, project.titile, project.image,project.liveLink, project.sourceLink);
   });
 });
 

@@ -14,6 +14,58 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
 });
 
 
+
+const popup1 = document.getElementById('popup1');
+const popup1Btn = document.getElementById('menuImg');
+const close1Btn = document.getElementById('close1Btn');
+
+popup1Btn.addEventListener('click', function() {
+    popup1.style.display = 'block';
+});
+
+close1Btn.addEventListener('click', function() {
+    popup1.style.display = 'none';
+});
+
+
+
+
+const slides = document.querySelectorAll('.slide');
+const circles = document.querySelector('.circles');
+
+slides.forEach((slide, index) => {
+  const circle = document.createElement('div');
+  circle.classList.add('circle');
+  circle.addEventListener('click', () => {
+    setActiveSlide(index)
+    ;
+  
+  });
+  circles.appendChild(circle);
+});
+
+let currentSlide = 0;
+setActiveSlide(currentSlide);
+
+function setActiveSlide(index) {
+  slides[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].style.backgroundColor ='white';
+  currentSlide = index;
+  slides[currentSlide].classList.add('actives');
+  circles.children[currentSlide].classList.add('actives');
+  circles.children[currentSlide].style.backgroundColor ='black';
+}
+
+
+
+
+
+
+
+
+
+
 const div = document.getElementById('main-1');
 const display = 0;
 
@@ -34,21 +86,21 @@ function hideShow()
 // Data for the response cards
 const cardData = [
     {
-      image: "image/repv-c.png",
+      image: "image/respon-html.png",
       titile: "Responsive Web Design",
-      description: "Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1",
-      link: "https://www.example.com/image1"
+      description: "FreeCodeCamp certificate for completing the Responsive Web Design course.",
+      link: "https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/responsive-web-design"
+    },
+    {
+      image: "image/java-certif.png",
+      titile: "JavaScript Certificate",
+      description: "FreeCodeCamp certificate for 300 hours of JavaScript coursework completion.",
+      link: "https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/javascript-algorithms-and-data-structures-v8"
     },
     {
       image: "image/repv-c.png",
-      titile: "Responsive Web Design",
-      description: "Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1",
-      link: "https://www.example.com/image1"
-    },
-    {
-      image: "image/repv-c.png",
-      titile: "Responsive Web Design",
-      description: "Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1 Description about Image 1",
+      titile: "Graphic Design",
+      description: "OJWA certificate in Web Design and Graphic Design.",
       link: "https://www.example.com/image1"
     },
     
@@ -125,38 +177,36 @@ const skillPercentage = document.createElement('div');
 const projectData = [
   {
     image:"image/covert-p.png",
-    titile:"Cash Regsiter",
-    description:"Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0Description of the project one ... 0",
+    titile:"Roman Numerals Converter",
+    description:"A web app that converts numbers to Roman numerals and checks if they are even or odd.",
     button:"See More",
-    longDescription: "Description of the project one ... 0",
+    longDescription: "The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
     technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "#",
-    sourceLink: "#",
+    liveLink: "https://breshnahamidi20.github.io/roman-numeral-converted/",
+    sourceLink: "https://github.com/Breshnahamidi20/roman-numeral-converted",
   },
 
   {
     image:"image/pokemo-p.png",
-    titile:"Pokemon",
-    description:"",
+    titile:"The Pokémon Search App",
+    description:"A web application that allows users to search for Pokémon by name or ID.",
     button:"See More",
-    longDescription: "Description of the project one ... 1",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
+    longDescription: "The Pokémon Search App is a web application designed to allow users to search for Pokémon and view their details. The app interacts with the Pokémon API to fetch real-time data about various Pokémon, including their names, types, abilities, and stats. Users can type the name of any Pokémon into the search bar and retrieve detailed information about that Pokémon.The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
     liveLink: "https://breshnahamidi20.github.io/pokemon/",
     sourceLink: "https://github.com/Breshnahamidi20/pokemon",
   },
-  
+
   {
     image:"image/number-p.png",
-    titile:"PalandRoom",
-    description:"",
+    titile:"Phone Validator App",
+    description:"The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.",
     button:"See More",
-    longDescription: "Description of the project one ... 3",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "#",
-    sourceLink: "#",
+    longDescription: "The Telephone Validator is a web application designed to validate telephone numbers based on various formats and rules. The app allows users to input a telephone number and check if it conforms to the specified format, handling international codes, area codes, and local numbers.The app uses JavaScript to perform telephone number validation and format checking. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across various devices.",
+    liveLink: "//breshnahamidi20.github.io/phone-number-validator-1/",
+    sourceLink: "//github.com/Breshnahamidi20/phone-number-validator-1",
+
     
   },
-  
   
 ];
 
@@ -168,14 +218,14 @@ projectContainer.innerHTML=`
 ;
 
 // Function to create and show the popup
-function openPopup(longDescription, titile, technologys, liveLink, sourceLink ) {
+function openPopup(longDescription, titile, image, liveLink, sourceLink ) {
   const popup = document.createElement("div");
   popup.classList.add("popup");
   popup.innerHTML = `
     <div class="popup-content">
     <h2>${titile}</h2>
+    <img src="${image}">
       <p>${longDescription}</p>
-      <p>${technologys}</p>
       <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
       <a href="${sourceLink}"><button class="source-link">source code</button></a>
     </div>
@@ -198,9 +248,35 @@ projectData.forEach(project => {
 
   // Add event listener to "See More" button
   projectElement.querySelector(".openPopupBtn").addEventListener("click", () => {
-    openPopup(project.longDescription, project.titile, project.technologys,project.liveLink, project.sourceLink);
+    openPopup(project.longDescription, project.titile, project.image, project.liveLink, project.sourceLink);
   });
 });
+
+
+
+
+
+
+
+
+const popupdata = [
+  {
+    image1:"",
+    image:"",
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const form = document.getElementById('contactForm');

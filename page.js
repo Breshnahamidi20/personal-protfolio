@@ -1,11 +1,12 @@
 
 const aboutContent = document.getElementById('about-content');
 aboutContent.innerHTML=`
+<div class=aboutcontiner>
+<div class="about-para">
 <h1>About Me</h1>
 <p>Get konw me better!</p>
-<p class="p1">i am breshna Hamid a webdeveloper.i am breshna Hamid a webdeveloper .
-i am breshna Hamid a webdeveloper i am breshna Hamid a webdeveloper i am breshna Hamid a webdeveloper 
-i am breshna Hamid a webdeveloper i am breshna Hamid a webdeveloper  </p>
+<p class="p1">
+I have a strong background in web development and graphic design. I am proficient in HTML and CSS, and I've completed several projects, including a notable one with JavaScript. My commitment to professional growth is reflected in my certifications from FreeCodeCamp in JavaScript and Responsive Web Design,</p>
 <div class="social-button">
 <div id ="social-media-about">
           <a href="https://www.facebook.com/profile.php?id=100072788701860&mibextid=ZbWKwL"><img src = "image/fb-icon.png"></imge></a>
@@ -16,7 +17,17 @@ i am breshna Hamid a webdeveloper i am breshna Hamid a webdeveloper  </p>
         <div>
         <button>click here to see me!</button>
         </div>
- </div>       
+      </div>
+      </div>
+      <div class="slider1 hidden">
+      <div class="slide1 actives"><img src="image/pro-6.jfif" alt="Image 1"></div>
+            <div class="slide1"><img src="image/pro-2.jfif" alt="Image 2"></div>
+            <div class="slide1"><img src="image/pro-3.jfif" alt="Image 3"></div>
+            <div class="slide1"><img src="image/pro-4.jfif" alt="Image 2"></div>
+            <div class="slide1"><img src="image/pro-5.jfif" alt="Image 3"></div>
+            <div class="circles1"></div>
+    </div>
+</div>       
 <div class="expert-year">
 <div>12+
 <p>Years of Experience</p>
@@ -37,3 +48,29 @@ i am breshna Hamid a webdeveloper i am breshna Hamid a webdeveloper  </p>
   </div>
 </div>
 `;
+const slides = document.querySelectorAll('.slide1');
+const circles = document.querySelector('.circles1');
+
+slides.forEach((slide, index) => {
+  const circle = document.createElement('div');
+  circle.classList.add('circle');
+  circle.addEventListener('click', () => {
+    setActiveSlide(index)
+    ;
+  
+  });
+  circles.appendChild(circle);
+});
+
+let currentSlide = 0;
+setActiveSlide(currentSlide);
+
+function setActiveSlide(index) {
+  slides[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].style.backgroundColor ='white';
+  currentSlide = index;
+  slides[currentSlide].classList.add('actives');
+  circles.children[currentSlide].classList.add('actives');
+  circles.children[currentSlide].style.backgroundColor ='black';
+}

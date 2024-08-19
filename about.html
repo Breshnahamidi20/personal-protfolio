@@ -9,16 +9,30 @@
 </head>
 <body>
   <div class=" main">
+    <div class="popup1" id="popup1">
+      <div class="popup1-content">
+          <span class="close1-btn" id="close1Btn">&times;</span>
+          <h1>Hi,I am Bershna <br>Web Developer</h1>
+  
+          <div class="slider">
+            <div class="slide actives"><img src="image/pro-6.jfif" alt="Image 1"></div>
+            <div class="slide"><img src="image/pro-2.jfif" alt="Image 2"></div>
+            <div class="slide"><img src="image/pro-3.jfif" alt="Image 3"></div>
+            <div class="slide"><img src="image/pro-4.jfif" alt="Image 2"></div>
+            <div class="slide"><img src="image/pro-5.jfif" alt="Image 3"></div>
+            <div class="circles"></div>
+          </div>
+      </div>
+  </div>
     <header>
       <h1>BreshnaHamidi</h1>
       <nav id = nav-bar>
         <div class = "mobile-menu" id="mobile-menu">
-          <image src="image/menu-img.png" id ="menu-img">
+          <image src="image/menu-img.png" id ="menuImg" class="menu-img">
           <ul >
             <li id="home"><a href ="index.html"  data-target="home" class="option-menu"><img src ="image/home.png" id="icon-menu">Home</a></li>
               <li><a href ="about.html" class="option-menu option-menu-1" data-target="about"><img src ="image/person.png" id="icon-menu" >About Me</a></li>
-              <li><a href = "education.html" class="option-menu" data-target=""><img src ="image/education.png" id="icon-menu">Education</a></li>
-              <li><a href = "project.html"  class="option-menu" data-target=""><img src ="image/Vector (1).png" id="icon-menu">projects</a></li>
+              <li><a href = "project.html"  class="option-menu" data-target=""><img src ="image/Vector (1).png" id="icon-menu">Projects</a></li>
               <li><a href = "skills.html"  class="option-menu" data-target=""><img src ="image/skills.png" id="icon-menu">Skills</a></li>
               <li><a href = "Contact.html"  class="option-menu" data-target=""><img src ="image/phone.png" id="icon-menu">Contact Me</a></li>
           </ul>
@@ -63,6 +77,50 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
       document.querySelector(".ham-menu.active span:nth-child(3)").classList.add('hidden');
   });
 });
+
+
+const popup1 = document.getElementById('popup1');
+const popup1Btn = document.getElementById('menuImg');
+const close1Btn = document.getElementById('close1Btn');
+
+popup1Btn.addEventListener('click', function() {
+    popup1.style.display = 'block';
+});
+
+close1Btn.addEventListener('click', function() {
+    popup1.style.display = 'none';
+});
+
+
+
+
+const slides = document.querySelectorAll('.slide');
+const circles = document.querySelector('.circles');
+
+slides.forEach((slide, index) => {
+  const circle = document.createElement('div');
+  circle.classList.add('circle');
+  circle.addEventListener('click', () => {
+    setActiveSlide(index)
+    ;
+  
+  });
+  circles.appendChild(circle);
+});
+
+let currentSlide = 0;
+setActiveSlide(currentSlide);
+
+function setActiveSlide(index) {
+  slides[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].classList.remove('actives');
+  circles.children[currentSlide].style.backgroundColor ='white';
+  currentSlide = index;
+  slides[currentSlide].classList.add('actives');
+  circles.children[currentSlide].classList.add('actives');
+  circles.children[currentSlide].style.backgroundColor ='black';
+}
+
 
 
 
