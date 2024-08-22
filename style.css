@@ -1706,6 +1706,17 @@ font-size: 90%;
        height: 103%;
         margin-left:-4px;
     }
+
+    footer {
+        height: 400px;
+    }
+
+    .social-media-footer a img {
+        width:80px;
+        height: 80px;
+        margin-top: -80px;
+        margin-right: 20px;
+    }
 }
 
 
