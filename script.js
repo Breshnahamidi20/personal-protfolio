@@ -54,7 +54,7 @@ function setActiveSlide(index) {
   currentSlide = index;
   slides[currentSlide].classList.add('actives');
   circles.children[currentSlide].classList.add('actives');
-  circles.children[currentSlide].style.backgroundColor ='black';
+  circles.children[currentSlide].style.backgroundColor ='#511F52';
 }
 
 
@@ -66,18 +66,19 @@ function setActiveSlide(index) {
 
 
 
-const div = document.getElementById('main-1');
-const display = 0;
+var div = document.getElementById('main1');
+var display = 1;
 
 function hideShow()
 {
-    if(display === 1)
+    if(display == 0)
     {
+      div.style.display = 'none';
+      display = 1;
+    }  else {
+        
         div.style.display = 'block';
         display = 0;
-    }  else {
-        div.style.display = 'none';
-        display = 1;
     }
 };
 
@@ -127,48 +128,9 @@ cardData.forEach(card => {
 });
 
 
-const softSkillsData = [
-  { skill: 'Team work', perDiv: '', percentage: '78%' },
-  { skill: 'Clean code', perDiv: '', percentage: '87%' },
-  { skill: 'Code review', perDiv: '' , percentage: '78%'},
-  { skill: 'Time Management', perDiv: '', percentage:'78%' },
-  { skill: 'Multi Tasking', perDiv: '', percentage: '78%' },
-  { skill: 'Crisis Management', perDiv: '', percentage: '78%' }
-];
-
-const images = ['html-skill.png', 'css-skill.png', 'js-skill.png'];
-
-const skillsContiner =document.getElementById("skills-continer");
-const softSkillContainer = document.querySelector('.soft-skill');
-const langSkillContainer = document.querySelector('.lang-skill');
 
 
-images.forEach(image => {
-    const img = document.createElement('img');
-    img.src = `image/${image}`;
-    langSkillContainer.appendChild(img);
-    skillsContiner.appendChild(langSkillContainer);
-});
 
-
-softSkillsData.forEach(skillData => {
-  const skillDiv = document.createElement('div');
-  const skillSpan = document.createElement('span');
-const skillperDiv = document.createElement('div');
-const skillPercentage = document.createElement('div');
-
-  skillSpan.textContent = skillData.skill;
-  skillperDiv.textContent = skillData.perDiv;
-  skillPercentage.textContent = skillData.percentage;
-  
-  skillDiv.appendChild(skillSpan);
-  skillDiv.appendChild(skillperDiv);
-  skillperDiv.appendChild(skillPercentage);
-  
-
-  softSkillContainer.appendChild(skillDiv);
-  skillsContiner.appendChild(softSkillContainer);
-});
 
 
 
@@ -211,11 +173,8 @@ const projectData = [
 ];
 
 const projectContainer = document.getElementById('project-continer');
-const projectCard = document.getElementById('project-card');
 
-projectContainer.innerHTML=`
-`
-;
+
 
 // Function to create and show the popup
 function openPopup(longDescription, titile, image, liveLink, sourceLink ) {
@@ -226,8 +185,11 @@ function openPopup(longDescription, titile, image, liveLink, sourceLink ) {
     <h2>${titile}</h2>
     <img src="${image}">
       <p>${longDescription}</p>
+      <div class="popup-btn">
       <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
       <a href="${sourceLink}"><button class="source-link">source code</button></a>
+      </div>
+      
     </div>
     <span class="close-popup" onclick="this.parentElement.remove()">&times;</span>
   `;
@@ -259,13 +221,179 @@ projectData.forEach(project => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//see more button on desktop version to see more project
+
+var divs = document.getElementById('more-project-div');
+var display = 1;
+
+function hideShow1()
+{
+    if(display == 0)
+    {
+      divs.style.display = 'none';
+      display = 1;
+    }  else {
+        
+        divs.style.display = 'block';
+        display = 0;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+const projectmData = [
+  {
+
+    image:"image/form-p.png",
+    titile:"Form Register",
+    description:"The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.",
+    button:"See More",
+    longDescription: "The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers after a transaction. It ensures accurate calculations and provides a detailed breakdown of the change to be given, including denominations.The app uses JavaScript to perform calculations and manage transactions. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.",
+    technologys: ["HTML", "CSS", "Git", "GitHub"],
+    liveLink: "//breshnahamidi20.github.io/phone-number-validator-1/",
+    sourceLink: "//github.com/Breshnahamidi20/phone-number-validator-1",
+  },
+  {
+
+
+    image:"image/palndroom-p.png",
+    titile:"Palindrome Checker",
+    description:"The Palindrome Checker is a web application that allows users to input a string and determine whether it reads the same forwards and backwards, identifying if it is a palindrome.",
+    button:"See More",
+    longDescription: "The Palindrome Checker is a web application designed to determine whether a given string is a palindrome. The app allows users to input a string and check if it reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization.The app uses JavaScript to perform palindrome checks and handle string manipulations. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.",
+    liveLink: "//breshnahamidi20.github.io/palindrome-checker/",
+    sourceLink: "//github.com/Breshnahamidi20/palindrome-checker",
+    
+  },
+  {
+    image:"image/cash-p.png",
+    titile:"Cash Register",
+    description:"The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers.",
+    button:"See More",
+    longDescription: "The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
+    liveLink: "//breshnahamidi20.github.io/cash-register/",
+    sourceLink: "//github.com/Breshnahamidi20/cash-register",
+    
+
+
+  },
+  
+];
+
+const moreProject = document.getElementById('more-project');
+
+
+// Function to create and show the popup
+function openPopup3(longDescription, titile, image, liveLink, sourceLink ) {
+  const popup = document.createElement("div");
+  popup.classList.add("popup3");
+  popup.innerHTML = `
+    <div class="popup-content">
+    <h2>${titile}</h2>
+    <img src="${image}">
+      <p>${longDescription}</p>
+      <div class="popup-btn"> 
+      <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
+      <a href="${sourceLink}"><button class="source-link">source code</button></a>
+      </div>
+     
+    </div>
+    <span class="close-popup" onclick="this.parentElement.remove()">&times;</span>
+  `;
+  moreProject.appendChild(popup);
+}
+
+projectmData.forEach(projectm => {
+  const projectElement = document.createElement("div");
+  projectElement.classList.add("project-card");
+
+  projectElement.innerHTML = `
+    <img src="${projectm.image}">
+    <h2>${projectm.titile}</h2>
+    <p>${projectm.description}</p>
+    <button class="openPopupBtn1">${projectm.button}</button>
+  `;
+  moreProject.appendChild(projectElement);
+
+  // Add event listener to "See More" button
+  projectElement.querySelector(".openPopupBtn1").addEventListener("click", () => {
+    openPopup3(projectm.longDescription, projectm.titile, projectm.image, projectm.liveLink, projectm.sourceLink);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const popupdata = [
   {
     image1:"",
     image:"",
   }
 ]
-
 
 
 

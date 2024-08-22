@@ -19,14 +19,14 @@ I have a strong background in web development and graphic design. I am proficien
         </div>
       </div>
       </div>
-      <div class="slider1 hidden">
-      <div class="slide1 actives"><img src="image/pro-6.jfif" alt="Image 1"></div>
+      <div class="slider1">
+            <div class="slide1 actives1"><img src="image/pro-6.jfif" alt="Image 1"></div>
             <div class="slide1"><img src="image/pro-2.jfif" alt="Image 2"></div>
             <div class="slide1"><img src="image/pro-3.jfif" alt="Image 3"></div>
             <div class="slide1"><img src="image/pro-4.jfif" alt="Image 2"></div>
             <div class="slide1"><img src="image/pro-5.jfif" alt="Image 3"></div>
             <div class="circles1"></div>
-    </div>
+          </div>
 </div>       
 <div class="expert-year">
 <div>12+
@@ -48,29 +48,30 @@ I have a strong background in web development and graphic design. I am proficien
   </div>
 </div>
 `;
-const slides = document.querySelectorAll('.slide1');
-const circles = document.querySelector('.circles1');
+const slides1 = document.querySelectorAll('.slide1');
+const circles1 = document.querySelector('.circles1');
 
-slides.forEach((slide, index) => {
-  const circle = document.createElement('div');
-  circle.classList.add('circle');
-  circle.addEventListener('click', () => {
+slides1.forEach((slide1, index) => {
+  const circle1 = document.createElement('div');
+  circle1.classList.add('circle1');
+  circle1.addEventListener('click', () => {
     setActiveSlide(index)
     ;
   
   });
-  circles.appendChild(circle);
+  circles1.appendChild(circle1);
 });
 
 let currentSlide = 0;
 setActiveSlide(currentSlide);
 
 function setActiveSlide(index) {
-  slides[currentSlide].classList.remove('actives');
-  circles.children[currentSlide].classList.remove('actives');
-  circles.children[currentSlide].style.backgroundColor ='white';
+  slides1[currentSlide].classList.remove('actives1');
+  circles1.children[currentSlide].classList.remove('actives1');
+  circles1.children[currentSlide].style.backgroundColor ='white';
   currentSlide = index;
-  slides[currentSlide].classList.add('actives');
-  circles.children[currentSlide].classList.add('actives');
-  circles.children[currentSlide].style.backgroundColor ='black';
+  slides1[currentSlide].classList.add('actives1');
+  circles1.children[currentSlide].classList.add('actives1');
+  circles1.children[currentSlide].style.backgroundColor ='black';
 }
+

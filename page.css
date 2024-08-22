@@ -28,7 +28,7 @@
     margin-right: auto;
     width:fit-content ;
 }
-.slider {
+.slider1 {
     display: none;
 }
 .about-content .p1 {
@@ -201,8 +201,8 @@ margin-bottom: 20px;
 .projects-card {
     width:100%;
     max-width:396px;
-    height:512px ;
-    background-color: #D9D9D9;
+    height:470px ;
+    background-color: #EEE6EE;
     border: 1px solid rebeccapurple;
     display: flex;
     text-align: center;
@@ -549,66 +549,7 @@ cursor: pointer;
     }
 
 
-    .slider1 {
-        position: relative;
-        width:85%;
-        border: 2px solid black;
-        height: 452px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      .slide1 {
-        display: none;
-        position: absolute;
-       
-        
-      }
-      
-      .actives {
-        display: block;
-        width: 90%;
-        height: 85%;
-        margin-top: -5px;
-      }
     
-      .slide1  img {
-        width: 97%;
-        height: 377px;
-      }
-      
-      .circles1 {
-        position: absolute;
-        top: 420px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50%;
-        height: 14px;
-        margin-left: auto;
-        margin-right: auto;
-        gap:4%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-      }
-      
-      .circle {
-        width: 13px;
-        height:     13px;
-        background-color: white;
-        border-radius: 50%;
-        display: inline-block;
-        margin: 0 5px;
-        cursor: pointer;
-        border: 1px solid black;
-        margin-right: 10px;
-      }
-      
 
 
 
@@ -730,6 +671,7 @@ cursor: pointer;
     flex-direction: column;
     justify-content: center;
 position: relative;
+margin-top: 20px;
   }
   
   .slide1 {
@@ -740,13 +682,14 @@ position: relative;
     
   }
   
-  .actives {
+  .actives1 {
     display: block;
     width: 90%;
     height: 85%;
-    margin-top: 45px;
+    margin-top: -70px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #00f500;
   }
 
   .slide1  img {
@@ -771,7 +714,7 @@ position: relative;
     
   }
   
-  .circle {
+  .circle1 {
     width: 13px;
     height:     13px;
     background-color: white;
