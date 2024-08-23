@@ -27,19 +27,6 @@ close1Btn.addEventListener('click', () => {
 
 const slides = document.querySelectorAll('.slide');
 const circles = document.querySelector('.circles');
-let currentSlide = 0;
-setActiveSlide(currentSlide);
-
-slides.forEach((slide, index) => {
-  const circle = document.createElement('div');
-  circle.classList.add('circle');
-  circle.addEventListener('click', () => {
-    setActiveSlide(index);
-  });
-  circles.appendChild(circle);
-});
-
-
 
 function setActiveSlide(index) {
   slides[currentSlide].classList.remove('actives');
@@ -50,6 +37,21 @@ function setActiveSlide(index) {
   circles.children[currentSlide].classList.add('actives');
   circles.children[currentSlide].style.backgroundColor = '#511F52';
 }
+
+slides.forEach((slide, index) => {
+  const circle = document.createElement('div');
+  circle.classList.add('circle');
+  circle.addEventListener('click', () => {
+    setActiveSlide(index);
+  });
+  circles.appendChild(circle);
+});
+
+let currentSlide = 0;
+setActiveSlide(currentSlide);
+
+
+
 
 var div = document.getElementById('main1');
 var display = 1;
