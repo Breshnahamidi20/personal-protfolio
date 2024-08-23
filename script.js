@@ -49,7 +49,7 @@ slides.forEach((slide, index) => {
 });
 
 const div = document.getElementById('main1');
-
+let display = 1;
 function hideShow() {
   if (display === 0) {
     div.style.display = 'none';
@@ -178,7 +178,7 @@ projectData.forEach((project) => {
 // see more button on desktop version to see more project
 
 const divs = document.getElementById('more-project-div');
-var display = 1;
+let display = 1;
 
 function hideShow1() {
   if (display === 0) {
