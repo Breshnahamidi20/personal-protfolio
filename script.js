@@ -64,8 +64,6 @@ function hideShow() {
     }
 };
 
-
-
 // Data for the response cards
 const cardData = [
     {
