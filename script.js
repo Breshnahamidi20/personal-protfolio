@@ -49,7 +49,7 @@ slides.forEach((slide, index) => {
 });
 
 const div = document.getElementById('main1');
-const readBtn = document.getElementById('read-btn')
+const readBtn = document.getElementById('read-btn');
 let display = 1;
 const hideShow = () => {
   if (display === 0) {
@@ -59,7 +59,6 @@ const hideShow = () => {
     div.style.display = 'block';
     display = 0;
   }
- 
 }
 readBtn.addEventListener('click', hideShow());
 
@@ -191,7 +190,7 @@ function hideShow1() {
     display = 0;
   }
 }
-
+readBtn.addEventListener('click', hideShow1() );
 // project section
 const projectmData = [
   {
