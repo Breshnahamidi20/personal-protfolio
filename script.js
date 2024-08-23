@@ -107,38 +107,35 @@ cardData.forEach((card) => {
 
 const projectData = [
   {
-    image:"image/covert-p.png",
-    titile:"Roman Numerals Converter",
-    description:"A web app that converts numbers to Roman numerals and checks if they are even or odd.",
-    button:"See More",
-    longDescription: "The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "https://breshnahamidi20.github.io/roman-numeral-converted/",
-    sourceLink: "https://github.com/Breshnahamidi20/roman-numeral-converted",
+    image: 'image/covert-p.png',
+    titile: 'Roman Numerals Converter',
+    description: 'A web app that converts numbers to Roman numerals and checks if they are even or odd.',
+    button: 'See More',
+    longDescription: 'The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.',
+    technologys: ['HTML', 'CSS', 'Git', 'GitHub'],
+    liveLink: 'https://breshnahamidi20.github.io/roman-numeral-converted/',
+    sourceLink: 'https://github.com/Breshnahamidi20/roman-numeral-converted',
   },
 
   {
-    image:"image/pokemo-p.png",
-    titile:"The Pokémon Search App",
-    description:"A web application that allows users to search for Pokémon by name or ID.",
-    button:"See More",
-    longDescription: "The Pokémon Search App is a web application designed to allow users to search for Pokémon and view their details. The app interacts with the Pokémon API to fetch real-time data about various Pokémon, including their names, types, abilities, and stats. Users can type the name of any Pokémon into the search bar and retrieve detailed information about that Pokémon.The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
-    liveLink: "https://breshnahamidi20.github.io/pokemon/",
-    sourceLink: "https://github.com/Breshnahamidi20/pokemon",
+    image: 'image/pokemo-p.png',
+    titile: 'The Pokémon Search App',
+    description: 'A web application that allows users to search for Pokémon by name or ID.',
+    button: 'See More',
+    longDescription: 'The Pokémon Search App is a web application designed to allow users to search for Pokémon and view their details. The app interacts with the Pokémon API to fetch real-time data about various Pokémon, including their names, types, abilities, and stats. Users can type the name of any Pokémon into the search bar and retrieve detailed information about that Pokémon.The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.',
+    liveLink: 'https://breshnahamidi20.github.io/pokemon/',
+    sourceLink: 'https://github.com/Breshnahamidi20/pokemon',
   },
 
   {
-    image:"image/number-p.png",
-    titile:"Phone Validator App",
-    description:"The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.",
-    button:"See More",
-    longDescription: "The Telephone Validator is a web application designed to validate telephone numbers based on various formats and rules. The app allows users to input a telephone number and check if it conforms to the specified format, handling international codes, area codes, and local numbers.The app uses JavaScript to perform telephone number validation and format checking. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across various devices.",
-    liveLink: "//breshnahamidi20.github.io/phone-number-validator-1/",
-    sourceLink: "//github.com/Breshnahamidi20/phone-number-validator-1",
-
-    
+    image: 'image/number-p.png',
+    titile: 'Phone Validator App',
+    description: 'The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.',
+    button: 'See More',
+    longDescription: 'The Telephone Validator is a web application designed to validate telephone numbers based on various formats and rules. The app allows users to input a telephone number and check if it conforms to the specified format, handling international codes, area codes, and local numbers.The app uses JavaScript to perform telephone number validation and format checking. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across various devices.',
+    liveLink: '//breshnahamidi20.github.io/phone-number-validator-1/',
+    sourceLink: '//github.com/Breshnahamidi20/phone-number-validator-1',
   },
-  
 ];
 
 const projectContainer = document.getElementById('project-continer');
