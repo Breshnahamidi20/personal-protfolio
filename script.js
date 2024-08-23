@@ -59,7 +59,7 @@ const hideShow = () => {
     div.style.display = 'block';
     display = 0;
   }
-}
+};
 readBtn.addEventListener('click', hideShow());
 
 // Data for the response cards
@@ -190,7 +190,7 @@ function hideShow1() {
     display = 0;
   }
 }
-readBtn.addEventListener('click', hideShow1() );
+readBtn.addEventListener('click', hideShow1());
 // project section
 const projectmData = [
   {
