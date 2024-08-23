@@ -29,7 +29,6 @@ const slides = document.querySelectorAll('.slide');
 const circles = document.querySelector('.circles');
 let currentSlide = 0;
 
-
 function setActiveSlide(index) {
   slides[currentSlide].classList.remove('actives');
   circles.children[currentSlide].classList.remove('actives');
@@ -139,7 +138,7 @@ const projectData = [
 const projectContainer = document.getElementById('project-continer');
 
 // Function to create and show the popup
-function openPopup (longDescription, titile, image, liveLink, sourceLink){
+function openPopup(longDescription, titile, image, liveLink, sourceLink) {
   const popup = document.createElement('div');
   popup.classList.add('popup');
   popup.innerHTML = `
@@ -173,7 +172,7 @@ projectData.forEach((project) => {
   // Add event listener to "See More" button
   projectElement.querySelector('.openPopupBtn').addEventListener('click', () => {
     openPopup(project.longDescription, project.titile, project.image, project.liveLink,
-       project.sourceLink);
+      project.sourceLink);
   });
 });
 // see more button on desktop version to see more project
@@ -226,7 +225,7 @@ const projectmData = [
 const moreProject = document.getElementById('more-project');
 
 // Function to create and show the popup
-function openPopup3(longDescription, titile, image, liveLink, sourceLink ) {
+function openPopup3(longDescription, titile, image, liveLink, sourceLink) {
   const popup = document.createElement('div');
   popup.classList.add('popup3');
   popup.innerHTML = `
@@ -244,7 +243,7 @@ function openPopup3(longDescription, titile, image, liveLink, sourceLink ) {
   moreProject.appendChild(popup);
 }
 
-projectmData.forEach( (projectm) => {
+projectmData.forEach((projectm) => {
   const projectElement = document.createElement('div');
   projectElement.classList.add('project-card');
 
