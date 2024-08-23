@@ -184,97 +184,75 @@ projectData.forEach((project) => {
 var divs = document.getElementById('more-project-div');
 var display = 1;
 
-function hideShow1()
-{
-    if(display == 0)
-    {
-      divs.style.display = 'none';
-      display = 1;
-    }  else {
-        
-        divs.style.display = 'block';
-        display = 0;
-    }
+function hideShow1() {
+  if (display === 0) {
+    divs.style.display = 'none';
+    display = 1;
+  } else {
+      divs.style.display = 'block';
+      display = 0;
+  }
 };
 
-
-
-
-
-
-
-
-
-
-
+// project section 
 const projectmData = [
   {
-
-    image:"image/form-p.png",
-    titile:"Form Register",
-    description:"The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.",
-    button:"See More",
-    longDescription: "The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers after a transaction. It ensures accurate calculations and provides a detailed breakdown of the change to be given, including denominations.The app uses JavaScript to perform calculations and manage transactions. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.",
-    technologys: ["HTML", "CSS", "Git", "GitHub"],
-    liveLink: "//breshnahamidi20.github.io/phone-number-validator-1/",
-    sourceLink: "//github.com/Breshnahamidi20/phone-number-validator-1",
+    image: 'image/form-p.png',
+    titile: 'Form Register',
+    description: 'The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.',
+    button: 'See More',
+    longDescription: 'The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers after a transaction. It ensures accurate calculations and provides a detailed breakdown of the change to be given, including denominations.The app uses JavaScript to perform calculations and manage transactions. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.',
+    technologys: ['HTML', 'CSS', 'Git', 'GitHub'],
+    liveLink: '//breshnahamidi20.github.io/phone-number-validator-1/',
+    sourceLink: '//github.com/Breshnahamidi20/phone-number-validator-1',
   },
   {
-
-
-    image:"image/palndroom-p.png",
-    titile:"Palindrome Checker",
-    description:"The Palindrome Checker is a web application that allows users to input a string and determine whether it reads the same forwards and backwards, identifying if it is a palindrome.",
-    button:"See More",
-    longDescription: "The Palindrome Checker is a web application designed to determine whether a given string is a palindrome. The app allows users to input a string and check if it reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization.The app uses JavaScript to perform palindrome checks and handle string manipulations. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.",
-    liveLink: "//breshnahamidi20.github.io/palindrome-checker/",
-    sourceLink: "//github.com/Breshnahamidi20/palindrome-checker",
-    
+    image: 'image/palndroom-p.png',
+    titile: 'Palindrome Checker',
+    description: 'The Palindrome Checker is a web application that allows users to input a string and determine whether it reads the same forwards and backwards, identifying if it is a palindrome.',
+    button: 'See More',
+    longDescription: 'The Palindrome Checker is a web application designed to determine whether a given string is a palindrome. The app allows users to input a string and check if it reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization.The app uses JavaScript to perform palindrome checks and handle string manipulations. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across a variety of devices.',
+    liveLink: '//breshnahamidi20.github.io/palindrome-checker/',
+    sourceLink: '//github.com/Breshnahamidi20/palindrome-checker',
   },
   {
-    image:"image/cash-p.png",
-    titile:"Cash Register",
-    description:"The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers.",
-    button:"See More",
-    longDescription: "The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.",
-    liveLink: "//breshnahamidi20.github.io/cash-register/",
-    sourceLink: "//github.com/Breshnahamidi20/cash-register",
-    
-
-
+    image: 'image/cash-p.png',
+    titile: 'Cash Register',
+    description: 'The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers.',
+    button: 'See More',
+    longDescription: 'The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.',
+    liveLink: '//breshnahamidi20.github.io/cash-register/',
+    sourceLink: '//github.com/Breshnahamidi20/cash-register',
   },
-  
 ];
 
 const moreProject = document.getElementById('more-project');
 
-
 // Function to create and show the popup
 function openPopup3(longDescription, titile, image, liveLink, sourceLink ) {
-  const popup = document.createElement("div");
-  popup.classList.add("popup3");
+  const popup = document.createElement('div');
+  popup.classList.add('popup3');
   popup.innerHTML = `
-    <div class="popup-content">
+    <div class='popup-content'>
     <h2>${titile}</h2>
-    <img src="${image}">
+    <img src='${image}'>
       <p>${longDescription}</p>
-      <div class="popup-btn"> 
-      <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
-      <a href="${sourceLink}"><button class="source-link">source code</button></a>
+      <div class='popup-btn'> 
+      <a href='${liveLink}'><button class='live-link'>Live Demo</button></a>
+      <a href='${sourceLink}'><button class='source-link'>source code</button></a>
       </div>
-     
     </div>
-    <span class="close-popup" onclick="this.parentElement.remove()">&times;</span>
+    <span class='close-popup' onclick='this.parentElement.remove()'>&times;</span>
   `;
   moreProject.appendChild(popup);
 }
 
 projectmData.forEach(projectm => {
-  const projectElement = document.createElement("div");
-  projectElement.classList.add("project-card");
+  const projectElement = document.createElement('div');
+  projectElement.classList.add('project-card');
 
   projectElement.innerHTML = `
-    <img src="${projectm.image}">
+    <img src='${projectm.image}'>
     <h2>${projectm.titile}</h2>
     <p>${projectm.description}</p>
     <button class="openPopupBtn1">${projectm.button}</button>
@@ -282,74 +260,12 @@ projectmData.forEach(projectm => {
   moreProject.appendChild(projectElement);
 
   // Add event listener to "See More" button
-  projectElement.querySelector(".openPopupBtn1").addEventListener("click", () => {
+  projectElement.querySelector('.openPopupBtn1').addEventListener('click', () => {
     openPopup3(projectm.longDescription, projectm.titile, projectm.image, projectm.liveLink, projectm.sourceLink);
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const popupdata = [
-  {
-    image1:"",
-    image:"",
-  }
-]
-
-
-
-
-
-
-
-
-
-
-
-
-
+// js of form section
 const form = document.getElementById('contactForm');
 const errorText = document.getElementById('error');
 
