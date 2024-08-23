@@ -139,7 +139,7 @@ const projectData = [
 const projectContainer = document.getElementById('project-continer');
 
 // Function to create and show the popup
-function openPopup(longDescription, titile, image, liveLink, sourceLink ){
+function openPopup (longDescription, titile, image, liveLink, sourceLink){
   const popup = document.createElement('div');
   popup.classList.add('popup');
   popup.innerHTML = `
@@ -148,7 +148,7 @@ function openPopup(longDescription, titile, image, liveLink, sourceLink ){
     <img src='${image}'>
       <p>${longDescription}</p>
       <div class='popup-btn'>
-      <a href="'{liveLink}'><button class='live-link'>Live Demo</button></a>
+      <a href='${liveLink}'><button class='live-link'>Live Demo</button></a>
       <a href='${sourceLink}'><button class='source-link'>source code</button></a>
       </div>
       
@@ -172,12 +172,13 @@ projectData.forEach((project) => {
 
   // Add event listener to "See More" button
   projectElement.querySelector('.openPopupBtn').addEventListener('click', () => {
-    openPopup(project.longDescription, project.titile, project.image, project.liveLink, project.sourceLink);
+    openPopup(project.longDescription, project.titile, project.image, project.liveLink,
+       project.sourceLink);
   });
 });
-//see more button on desktop version to see more project//
+// see more button on desktop version to see more project
 
-var divs = document.getElementById('more-project-div');
+const divs = document.getElementById('more-project-div');
 var display = 1;
 
 function hideShow1() {
@@ -188,7 +189,7 @@ function hideShow1() {
     divs.style.display = 'block';
     display = 0;
   }
-};
+}
 
 // project section
 const projectmData = [
@@ -243,7 +244,7 @@ function openPopup3(longDescription, titile, image, liveLink, sourceLink ) {
   moreProject.appendChild(popup);
 }
 
-projectmData.forEach(projectm => {
+projectmData.forEach( (projectm) => {
   const projectElement = document.createElement('div');
   projectElement.classList.add('project-card');
 
@@ -257,7 +258,8 @@ projectmData.forEach(projectm => {
 
   // Add event listener to "See More" button
   projectElement.querySelector('.openPopupBtn1').addEventListener('click', () => {
-    openPopup3(projectm.longDescription, projectm.titile, projectm.image, projectm.liveLink, projectm.sourceLink);
+    openPopup3(projectm.longDescription, projectm.titile, projectm.image, projectm.liveLink,
+      projectm.sourceLink);
   });
 });
 
@@ -278,7 +280,6 @@ form.addEventListener('submit', (event) => {
 
   const formData = { name, email, message };
   localStorage.setItem('formData', JSON.stringify(formData));
-
 
   // Here you can send the form data to Formspree service
 
