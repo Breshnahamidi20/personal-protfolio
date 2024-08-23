@@ -143,31 +143,31 @@ const projectContainer = document.getElementById('project-continer');
 
 
 // Function to create and show the popup
-function openPopup(longDescription, titile, image, liveLink, sourceLink ) {
-  const popup = document.createElement("div");
-  popup.classList.add("popup");
+function openPopup(longDescription, titile, image, liveLink, sourceLink ){
+  const popup = document.createElement('div');
+  popup.classList.add('popup');
   popup.innerHTML = `
-    <div class="popup-content">
+    <div class='popup-content'>
     <h2>${titile}</h2>
-    <img src="${image}">
+    <img src='${image}'>
       <p>${longDescription}</p>
-      <div class="popup-btn">
-      <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
-      <a href="${sourceLink}"><button class="source-link">source code</button></a>
+      <div class='popup-btn'>
+      <a href="'{liveLink}'><button class='live-link'>Live Demo</button></a>
+      <a href='${sourceLink}'><button class='source-link'>source code</button></a>
       </div>
       
     </div>
-    <span class="close-popup" onclick="this.parentElement.remove()">&times;</span>
+    <span class='close-popup' onclick='this.parentElement.remove()'>&times;</span>
   `;
   projectContainer.appendChild(popup);
 }
 
-projectData.forEach(project => {
-  const projectElement = document.createElement("div");
-  projectElement.classList.add("project-card");
+projectData.forEach((project) => {
+  const projectElement = document.createElement('div');
+  projectElement.classList.add('project-card');
 
   projectElement.innerHTML = `
-    <img src="${project.image}">
+    <img src='${project.image}'>
     <h2>${project.titile}</h2>
     <p>${project.description}</p>
     <button class="openPopupBtn">${project.button}</button>
@@ -175,34 +175,11 @@ projectData.forEach(project => {
   projectContainer.appendChild(projectElement);
 
   // Add event listener to "See More" button
-  projectElement.querySelector(".openPopupBtn").addEventListener("click", () => {
+  projectElement.querySelector('.openPopupBtn').addEventListener('click', () => {
     openPopup(project.longDescription, project.titile, project.image, project.liveLink, project.sourceLink);
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//see more button on desktop version to see more project
+//see more button on desktop version to see more project//
 
 var divs = document.getElementById('more-project-div');
 var display = 1;
