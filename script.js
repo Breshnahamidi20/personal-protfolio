@@ -178,7 +178,6 @@ projectData.forEach((project) => {
 // see more button on desktop version to see more project
 
 const divs = document.getElementById('more-project-div');
-let display = 1;
 
 function hideShow1() {
   if (display === 0) {
