@@ -57,7 +57,7 @@ function hideShow() {
   if (display === 0) {
     div.style.display = 'none';
     display = 1;
-  }else {
+  } else {
     div.style.display = 'block';
     display = 0;
   }
@@ -76,22 +76,21 @@ const cardData = [
     titile: 'JavaScript Certificate',
     description: 'FreeCodeCamp certificate for 300 hours of JavaScript coursework completion.',
     link: 'https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/javascript-algorithms-and-data-structures-v8',
-    },
-    {
-      image: 'image/repv-c.png',
-      titile: 'Graphic Design',
-      description: 'OJWA certificate in Web Design and Graphic Design.',
-      link: 'https://www.example.com/image1',
-    },
+  },
+  {
+    image: 'image/repv-c.png',
+    titile: 'Graphic Design',
+    description: 'OJWA certificate in Web Design and Graphic Design.',
+    link: 'https://www.example.com/image1',
+  },
 ];
-  
-  // Container to hold the dynamically created cards
-const certificateContiner = document.getElementById("certificate-continer");
+// Container to hold the dynamically created cards
+const certificateContiner = document.getElementById('certificate-continer');
 
 // Create response cards dynamically
-cardData.forEach(card => {
-  const cardElement = document.createElement("div");
-  cardElement.classList.add("response-card");
+cardData.forEach((card) => {
+  const cardElement = document.createElement('div');
+  cardElement.classList.add('response-card');
 
   cardElement.innerHTML = `
   
@@ -103,13 +102,6 @@ cardData.forEach(card => {
 
   certificateContiner.appendChild(cardElement);
 });
-
-
-
-
-
-
-
 
 // project popuo
 
