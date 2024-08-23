@@ -27,6 +27,8 @@ close1Btn.addEventListener('click', () => {
 
 const slides = document.querySelectorAll('.slide');
 const circles = document.querySelector('.circles');
+let currentSlide = 0;
+setActiveSlide(currentSlide);
 
 slides.forEach((slide, index) => {
   const circle = document.createElement('div');
@@ -37,8 +39,7 @@ slides.forEach((slide, index) => {
   circles.appendChild(circle);
 });
 
-let currentSlide = 0;
-setActiveSlide(currentSlide);
+
 
 function setActiveSlide(index) {
   slides[currentSlide].classList.remove('actives');
@@ -189,12 +190,12 @@ function hideShow1() {
     divs.style.display = 'none';
     display = 1;
   } else {
-      divs.style.display = 'block';
-      display = 0;
+    divs.style.display = 'block';
+    display = 0;
   }
 };
 
-// project section 
+// project section
 const projectmData = [
   {
     image: 'image/form-p.png',
@@ -269,7 +270,7 @@ projectmData.forEach(projectm => {
 const form = document.getElementById('contactForm');
 const errorText = document.getElementById('error');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const name = document.getElementById('name').value;
@@ -290,7 +291,7 @@ form.addEventListener('submit', function(event) {
   errorText.style.display = 'none';
 });
 
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
   const savedFormData = localStorage.getItem('formData');
   if (savedFormData) {
     const { name, email, message } = JSON.parse(savedFormData);
