@@ -6,7 +6,7 @@ hamMenu.addEventListener('click', () => {
 });
 
 document.querySelectorAll('#mobile-menu a').forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener('click', () => {
     document.querySelector('.mobile-menu.active').classList.add('hidden');
     document.querySelector('.ham-menu.active span:nth-child(1)').classList.add('hidden');
     document.querySelector('.ham-menu.active span:nth-child(3)').classList.add('hidden');
@@ -33,7 +33,7 @@ slides.forEach((slide, index) => {
   circle.classList.add('circle');
   circle.addEventListener('click', () => {
     setActiveSlide(index);
-});
+  });
   circles.appendChild(circle);
 });
 
@@ -54,42 +54,39 @@ var div = document.getElementById('main1');
 var display = 1;
 
 function hideShow() {
-  if (display == 0) {
+  if (display === 0) {
     div.style.display = 'none';
     display = 1;
-    }  else {
-        
-        div.style.display = 'block';
-        display = 0;
-    }
-};
+  }else {
+    div.style.display = 'block';
+    display = 0;
+  }
+}
 
 // Data for the response cards
 const cardData = [
-    {
-      image: "image/respon-html.png",
-      titile: "Responsive Web Design",
-      description: "FreeCodeCamp certificate for completing the Responsive Web Design course.",
-      link: "https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/responsive-web-design"
+  {
+    image: 'image/respon-html.png',
+    titile: 'Responsive Web Design',
+    description: 'FreeCodeCamp certificate for completing the Responsive Web Design course.',
+    link: 'https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/responsive-web-design',
+  },
+  {
+    image: 'image/java-certif.png',
+    titile: 'JavaScript Certificate',
+    description: 'FreeCodeCamp certificate for 300 hours of JavaScript coursework completion.',
+    link: 'https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/javascript-algorithms-and-data-structures-v8',
     },
     {
-      image: "image/java-certif.png",
-      titile: "JavaScript Certificate",
-      description: "FreeCodeCamp certificate for 300 hours of JavaScript coursework completion.",
-      link: "https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/javascript-algorithms-and-data-structures-v8"
+      image: 'image/repv-c.png',
+      titile: 'Graphic Design',
+      description: 'OJWA certificate in Web Design and Graphic Design.',
+      link: 'https://www.example.com/image1',
     },
-    {
-      image: "image/repv-c.png",
-      titile: "Graphic Design",
-      description: "OJWA certificate in Web Design and Graphic Design.",
-      link: "https://www.example.com/image1"
-    },
-    
-    
-  ];
+];
   
   // Container to hold the dynamically created cards
-  const certificateContiner = document.getElementById("certificate-continer");
+const certificateContiner = document.getElementById("certificate-continer");
 
 // Create response cards dynamically
 cardData.forEach(card => {
