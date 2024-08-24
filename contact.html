@@ -58,25 +58,25 @@
             </div>
         
         <div class="forms-div">
-          <form action="" id="contactForms">
+          <form action="" id="contactForms" method="post">
             <div class="form-responsive">
               <div class="FR-1">
                 <label  > First Name</label>
-            <input type="text"  id="name" placeholder="enter your name" required  maxlength="30" >
+            <input type="text"  id="first-name" placeholder="enter your name" required  maxlength="30" >
               </div>
             
               <div class="FR-2">
                 <label >Last Name</label>
-            <input type="text"  id="name"  placeholder="enter your last name" required  maxlength="30">
+            <input type="text"  id="last-name"  placeholder="enter your last name" required  maxlength="30">
               </div>
             
           </div>
             <label>Company</label>
-            <input type="text"  id="name" placeholder="enter your company name" required  maxlength="30">
+            <input type="text"  id="" placeholder="enter your company name" required  maxlength="30">
             <label>Email</label>
             <input type="email" placeholder="enter your email" required>
             <label>Phone Number</label>
-            <input type="number"  id="name" placeholder="enter your phone number" required  maxlength="30">
+            <input type="number"  id="number" placeholder="enter your phone number" required  maxlength="30">
             <label>Message</label>
             <textarea name=""
             id="message"
@@ -103,113 +103,7 @@
         <hr>
       </footer>
 
-    <script>
-const hamMenu = document.querySelector('.ham-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
-hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-});
-
-document.querySelectorAll("#mobile-menu a").forEach((link) => {
-  link.addEventListener("click", () => {
-      document.querySelector(".mobile-menu.active").classList.add('hidden');
-      document.querySelector(".ham-menu.active span:nth-child(1)").classList.add('hidden');
-      document.querySelector(".ham-menu.active span:nth-child(3)").classList.add('hidden');
-  });
-});
-
-
-const popup1 = document.getElementById('popup1');
-const popup1Btn = document.getElementById('menuImg');
-const close1Btn = document.getElementById('close1Btn');
-
-popup1Btn.addEventListener('click', function() {
-    popup1.style.display = 'block';
-});
-
-close1Btn.addEventListener('click', function() {
-    popup1.style.display = 'none';
-});
-
-
-
-
-const slides = document.querySelectorAll('.slide');
-const circles = document.querySelector('.circles');
-
-slides.forEach((slide, index) => {
-  const circle = document.createElement('div');
-  circle.classList.add('circle');
-  circle.addEventListener('click', () => {
-    setActiveSlide(index)
-    ;
-  
-  });
-  circles.appendChild(circle);
-});
-
-let currentSlide = 0;
-setActiveSlide(currentSlide);
-
-function setActiveSlide(index) {
-  slides[currentSlide].classList.remove('actives');
-  circles.children[currentSlide].classList.remove('actives');
-  circles.children[currentSlide].style.backgroundColor ='white';
-  currentSlide = index;
-  slides[currentSlide].classList.add('actives');
-  circles.children[currentSlide].classList.add('actives');
-  circles.children[currentSlide].style.backgroundColor ='black';
-}
-
-
-
-
-// form submition
-
-function submitForm() {
-  const firstName = document.getElementById('firstName').value.trim();
-  const lastName = document.getElementById('lastName').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  if (!firstName || !lastName || !email || !message) {
-    // eslint-disable-next-line no-alert
-    alert('Please fill out all required fields.');
-    return;
-  }
-
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    // eslint-disable-next-line no-alert
-    alert('Please enter a valid email address.');
-    return;
-  }
-
-  const phonePattern = /^\d+$/;
-  if (!phonePattern.test(phone)) {
-    // eslint-disable-next-line no-alert
-    alert('Please enter a valid phone number (digits only).');
-    return;
-  }
-
-  const form = document.getElementById('contactForm');
-  form.action = 'https://formspree.io/f/xblrodky';
-  form.method = 'POST';
-  form.submit();
-
-  // eslint-disable-next-line no-alert
-  alert('Your message has been sent!');
-  form.reset();
-}
-
-document.getElementById('contactForm').addEventListener('submit', (event) => {
-  event.preventDefault();
-  submitForm();
-});
-
-
-    </script>
+    <script src="page.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

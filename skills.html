@@ -58,9 +58,38 @@
               <P>Explore What I Can Do!</P>
             </div>
               <div class="lang-skills">
-              
+                <img src="image/html-skill.png">
+                <img src="image/css-skill.png">
+                <img src="image/js-skill.png">
               </div>
-              <div class="soft-skills"></div>
+              <div class="soft-skills">
+                <div >
+                  <span>Team Work</span>
+                  <div><div id="TeamWork">93%</div></div>
+                </div>
+                <div >
+                  <span>Clean Code</span>
+                  <div><div id="CleanCode">90%</div></div>
+                </div>
+                <div >
+                  <span>code Review</span>
+                  <div><div id="codeReview">80%</div></div>
+                </div>
+                <div >
+                  <span>Time Mangement</span>
+                  <div><div id="TimeMangement">80%</div></div>
+                </div>
+                <div>
+                  <span>Multi Tasking</span>
+                  <div><div id="MultiTasking">80%</div></div>
+                </div>
+                <div>
+                  <span>crisis Mangement</span>
+                  <div><div id="crisisMangement">78%</div></div>
+                </div>
+
+
+              </div>
           </div>
         </section>
         <footer>
@@ -76,119 +105,6 @@
           </div>
           <hr>
         </footer>
-  
-          <script>
-const hamMenu = document.querySelector('.ham-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
-hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-});
-
-document.querySelectorAll("#mobile-menu a").forEach((link) => {
-  link.addEventListener("click", () => {
-      document.querySelector(".mobile-menu.active").classList.add('hidden');
-      document.querySelector(".ham-menu.active span:nth-child(1)").classList.add('hidden');
-      document.querySelector(".ham-menu.active span:nth-child(3)").classList.add('hidden');
-  });
-});
-
-
-
-
-
-const popup1 = document.getElementById('popup1');
-const popup1Btn = document.getElementById('menuImg');
-const close1Btn = document.getElementById('close1Btn');
-
-popup1Btn.addEventListener('click', function() {
-    popup1.style.display = 'block';
-});
-
-close1Btn.addEventListener('click', function() {
-    popup1.style.display = 'none';
-});
-
-
-
-
-const slides = document.querySelectorAll('.slide');
-const circles = document.querySelector('.circles');
-
-slides.forEach((slide, index) => {
-  const circle = document.createElement('div');
-  circle.classList.add('circle');
-  circle.addEventListener('click', () => {
-    setActiveSlide(index)
-    ;
-  
-  });
-  circles.appendChild(circle);
-});
-
-let currentSlide = 0;
-setActiveSlide(currentSlide);
-
-function setActiveSlide(index) {
-  slides[currentSlide].classList.remove('actives');
-  circles.children[currentSlide].classList.remove('actives');
-  circles.children[currentSlide].style.backgroundColor ='white';
-  currentSlide = index;
-  slides[currentSlide].classList.add('actives');
-  circles.children[currentSlide].classList.add('actives');
-  circles.children[currentSlide].style.backgroundColor ='black';
-}
-
-
-
-
-
-
-
-            const softSkillsData = [
-  { skill: 'Team work', perDiv: '', percentage: '78%' },
-  { skill: 'Clean code', perDiv: '', percentage: '87%' },
-  { skill: 'Code review', perDiv: '' , percentage: '78%'},
-  { skill: 'Time Management', perDiv: '', percentage:'78%' },
-  { skill: 'Multi Tasking', perDiv: '', percentage: '78%' },
-  { skill: 'Crisis Management', perDiv: '', percentage: '78%' }
-];
-
-const images = ['html-skill.png', 'css-skill.png', 'js-skill.png'];
-
-const skillChart =document.getElementById('skills-chart');
-const softSkillContainer = document.querySelector('.soft-skills');
-const langSkillContainer = document.querySelector('.lang-skills');
-
-
-images.forEach(image => {
-    const img = document.createElement('img');
-    img.src = `image/${image}`;
-    langSkillContainer.appendChild(img);
-    skillChart.appendChild(langSkillContainer);
-});
-
-
-softSkillsData.forEach(skillData => {
-  const skillDiv = document.createElement('div');
-  const skillSpan = document.createElement('span');
-const skillperDiv = document.createElement('div');
-const skillPercentage = document.createElement('div');
-
-  skillSpan.textContent = skillData.skill;
-  skillperDiv.textContent = skillData.perDiv;
-  skillPercentage.textContent = skillData.percentage;
-  
-  skillDiv.appendChild(skillSpan);
-  skillDiv.appendChild(skillperDiv);
-  skillperDiv.appendChild(skillPercentage);
-  
-
-  softSkillContainer.appendChild(skillDiv);
-  skillChart.appendChild(softSkillContainer);
-});
-
-
-          </script>
+  <script src="page.js"></script>
 </body>
 </html>

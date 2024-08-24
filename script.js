@@ -77,10 +77,10 @@ const cardData = [
     link: 'https://www.freecodecamp.org/certification/fccef9db32b-83b2-4444-a713-d369c0ba2b20/javascript-algorithms-and-data-structures-v8',
   },
   {
-    image: 'image/repv-c.png',
+    image: 'image/ojwa.jfif',
     titile: 'Graphic Design',
     description: 'OJWA certificate in Web Design and Graphic Design.',
-    link: 'https://www.example.com/image1',
+    link: 'https://drive.google.com/file/d/1jb-eoVSsKBhSQMRiIFNxo-pty6XM3i5w/view?usp=drivesdk',
   },
 ];
 // Container to hold the dynamically created cards
