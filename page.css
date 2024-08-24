@@ -1,6 +1,6 @@
 .about-content {
-  background-color: #F9F5F9;
-  width:100%;
+  background-color: #f9f5f9;
+  width: 100%;
   height: 1050px;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
 .aboutcontiner {
   display: flex;
   align-items: center;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   flex-direction: column;
   justify-content: center;
 }
@@ -25,7 +25,7 @@
 .aboutcontiner p {
   margin-left: auto;
   margin-right: auto;
-  width:fit-content ;
+  width: fit-content;
 }
 
 .slider1 {
@@ -34,23 +34,23 @@
 
 .about-content .p1 {
   width: 80%;
-  text-align:left;
+  text-align: left;
   display: flex;
   justify-content:flex-start;
   margin-left: auto;
-   margin-right: auto;
+  margin-right: auto;
 }
 
 .social-button {
- width:80%;
- height: 30px;
- display: flex;
- background-color: #F9F5F9;
- flex-direction: row;
- justify-content:space-around;
- margin-top: 20px;
- margin-left: auto;
- margin-right: auto;
+  width: 80%;
+  height: 30px;
+  display: flex;
+  background-color: #F9F5F9;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #social-media-about {
@@ -60,22 +60,22 @@
 }
 
 #social-media-about img {
-  width:30px;
+  width: 30px;
 }
 
 #social-media-about a{
   display: grid;
   margin-right: -5px;
-} 
+}
 
 .social-button button {
-  background-color:#511F52 ;
-  color:white;
+  background-color: #511F52 ;
+  color: white;
   border-radius: 7px;
   cursor: pointer;
   height: 25px;
   font-size: xx-small;
-  width:100px ;
+  width: 100px;
 }
 
 .social-button button:hover {
@@ -88,8 +88,8 @@
   display: flex;
   flex-direction: row;
   margin-top: 30PX;
-  gap:20px;
-  width:80%;
+  gap: 20px;
+  width: 80%;
   border: 1px solid #511F52;
   height: 120px;
   background-color: rgb(224, 210, 224);
@@ -99,7 +99,7 @@
 
 .expert-year div:nth-child(1) {
   text-align: center;
-  width:50%;
+  width: 50%;
   margin-top: 20px;
   border-right: 1px dashed   #511F52;
   margin-bottom: 20px;
@@ -127,7 +127,7 @@
 .my-expert .expert-list {
   width: 100%;
   height: 400px;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -152,7 +152,7 @@
 }
   /*project css */
 .projects {
-  width:100%;
+  width: 100%;
   height: 3440px;
   display: flex;
   text-align: center;
@@ -173,8 +173,8 @@
 }
 
 .projects-continer {
-  width:100%;
-  height:3300px;
+  width: 100%;
+  height: 3300px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -183,9 +183,9 @@
 }
 
 .projects-card {
-  width:100%;
-  max-width:396px;
-  height:470px ;
+  width: 100%;
+  max-width: 396px;
+  height: 470px;
   background-color: #EEE6EE;
   border: 1px solid rebeccapurple;
   display: flex;
@@ -217,13 +217,13 @@
 }
 
 .projects-card button {
-  width:100%;
+  width: 100%;
   max-width: 90%;
   height: 61px;
-  border:3px solid #511F52;
+  border: 3px solid #511F52;
   background-color: #511F52;
   color: #fff;
-  font-size:30px ;
+  font-size: 30px ;
   font-weight: 400;
   line-height: 37px;
   border-radius: 7px;
@@ -232,7 +232,7 @@
 
 .projects-card button:hover {
   background-color: #eb5cdfad;
-  color:#511F52;
+  color: #511F52;
 }
 
 .projects-list h1 {
@@ -246,13 +246,13 @@
 }
 
 #skill {
-  width:100%;
+  width: 100%;
   height: 850px;
   background-color: #fdf5fd ;
 }
 
 .skills-chart {
-  width:100%;
+  width: 100%;
   height: 100hv;
   display: flex;
   flex-direction: column;
@@ -315,17 +315,17 @@
 .soft-skills div div div {
   width: 200px;
   height: 19px;
-  background-color:#511F52;
+  background-color: #511F52;
   border-radius: 43px 0 0 43px ;
   text-align: center;
-  color:white;
+  color: white;
   margin-top: -2.3px;
 }
 
 .soft-skills  span {
-  background:rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
   margin-top: 40px;
-  font-size:20px;
+  font-size: 20px;
   color: #511F52;
   padding-bottom: 10px;
 }
@@ -343,7 +343,7 @@
 }
 
 .forms-contact {
-  width:100%;
+  width: 100%;
   display: flex;
   height: 900px;
   text-align: center;
@@ -353,7 +353,7 @@
 }
 
 .space-contact {
-  width:100%;
+  width: 100%;
   height: 210px;
   background-color: #ffffff;
 }
@@ -387,24 +387,24 @@
 
 .forms-div input {
   width: 100%;
-  height:40px ;
+  height: 40px;
   max-width: 98%;
   border: 1px solid #511F52;
-  border-radius:5px ;
+  border-radius: 5px ;
   background-color: #ceb3cd;
-  color:black;
+  color: black;
   margin-left: 0px;
   margin-bottom: 10px;
   box-shadow: #511F52;
 }
 
 .forms-div textarea {
-  width:100%;
-  max-width:98%;
-  height:100px;
+  width: 100%;
+  max-width: 98%;
+  height: 100px;
   display: block;
   border: 1px solid #511F52;
-  border-radius:5px ;
+  border-radius: 5px;
   background-color: #ceb3cd;
   box-shadow: #511F52;
 }
@@ -431,9 +431,9 @@
 }
 
 #error {
-  color:rgb(0, 255, 13);
+  color: rgb(0, 255, 13);
   background-color: #511F52;
-  width:100px;
+  width: 100px;
   height: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -485,7 +485,7 @@
     text-align: center;
     margin: 0 0 auto;
   }
-    
+
   .option-menu {
     display: flex;
     text-decoration: none;
@@ -493,9 +493,9 @@
     justify-content: center;
     color: black;
     text-align: center;
-    font-size:20px;
+    font-size: 20px;
     font-family: Acme;
-    }
+  }
 
   .option-menu:hover {
     color: #fcfcfc;
@@ -520,14 +520,14 @@
   }
     
   .projects-list  h1 {
-    margin-top:200px;
+    margin-top: 200px;
     font-size: 80px;
   }
     
   .projects-continer {
-    width:100%;
-    height:1900px;
-    gap:1%;
+    width: 100%;
+    height: 1900px;
+    gap: 1%;
   }
 
   .projects-card {
@@ -539,7 +539,7 @@
   }
 
   .social-media-footer a img {
-    width:80px;
+    width: 80px;
     height: 80px;
   }
 }
@@ -548,7 +548,7 @@
 
   .about-content {
     height: 1700px;
-}
+  }
 
   .aboutcontiner {
     width: 80%;
@@ -558,8 +558,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:2px;
-    margin-top:110px;
+    gap: 2px;
+    margin-top: 110px;
     margin-left: 160px;
     margin-right: 160px;
   }
@@ -571,7 +571,7 @@
   }
 
   .about-para h1 {
-    width:499px;
+    width: 499px;
     height: 165px;
     font-size: 110px;
     line-height: 165px;
@@ -612,10 +612,9 @@
     margin-top: -70px;
     margin-left: auto;
     margin-right: auto;
-  
   }
 
-  .slide1  img {
+  .slide1 img {
     width: 100%;
     height: 360px;
     margin-top: 25px;
@@ -630,7 +629,7 @@
     height: 14px;
     margin-left: auto;
     margin-right: auto;
-    gap:4%;
+    gap: 4%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -649,7 +648,7 @@
   }
 
   .aboutcontiner .p1 {
-    width:99%;
+    width: 99%;
     font-size: 24px;
 }
 
@@ -661,7 +660,7 @@
   }
 
   #social-media-about img {
-    width:50px;
+    width: 50px;
     height: 50px;
     margin-right: 20px;
   }
@@ -674,8 +673,8 @@
     display: flex;
     flex-direction: row;
     margin-top: 150PX;
-    gap:20px;
-    width:75%;
+    gap: 20px;
+    width: 75%;
     border: 1px solid #511F52;
     height: 300px;
     margin-left: auto;
@@ -715,15 +714,16 @@
     text-align: center;
     font-size: 50px;
   }
+
   .my-expert .expert-list {
     width: 100%;
     height: 400px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:100px;
+    gap: 100px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: auto;
@@ -733,7 +733,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width:45%;
+    width: 45%;
   }
 
   .my-expert .expert-list div p {
@@ -771,11 +771,11 @@
  }
 
   .projects-card {
-    width:29%;
+    width: 29%;
     margin-bottom: 80px;
   }
 
-  skill {
+  #skill {
     height: 1500px;
   }
 
@@ -808,7 +808,7 @@
     height: 300px;
     gap:30px;
     text-align: center;
-    padding-top:0px;
+    padding-top: 0px;
   }
 
   .lang-skills img {
@@ -821,7 +821,7 @@
   }
 
   .soft-skills div {
-    width:40%;
+    width: 40%;
     margin-right: 50px;
   }
 
@@ -837,7 +837,7 @@
   }
 
   .soft-skills div div div {
-    width:70%;
+    width: 70%;
     height: 72px;
     font-size: 40px;
   }
@@ -845,20 +845,20 @@
   .soft-skills  span {
     background:rgb(255, 255, 255);
     margin-top: 40px;
-    font-size:40px;
+    font-size: 40px;
     color: #511F52;
     padding-bottom: 10px;
   }
 
   .contact-page {
-    width:100%;
-    height:1900px;
+    width: 100%;
+    height: 1900px;
     text-align: center;
     background-color: rgb(251, 247, 251);
   }
 
   .forms-contact {
-    width:100%;
+    width: 100%;
     display: flex;
     height: 1800px;
     text-align: center;
@@ -868,9 +868,9 @@
   }
 
   .space-contact {
-    width:100%;
+    width: 100%;
     height: 310px;
-    background-color:rgb(251, 247, 251);
+    background-color: rgb(251, 247, 251);
   }
 
   .space-contact h2 {
@@ -892,7 +892,7 @@
     margin-left:  auto;
     margin-right: auto;
     text-align: left;
-    margin-top:180px;
+    margin-top: 180px;
   }
 
   .forms-div label {
@@ -917,18 +917,18 @@
   }
 
   .FR-2 {
-    width:40%;
+    width: 40%;
     margin-right: 0px;
   }
 
   .forms-div input {
     width: 100%;
-    height:90px ;
+    height: 90px ;
     max-width: 98%;
     border: 1px solid #511F52;
-    border-radius:20px ;
+    border-radius: 20px ;
     background-color: rgb(213, 201, 213);
-    color:black;
+    color: black;
     margin-left: 0px;
     margin-bottom: 20px;
     box-shadow: #511F52;
