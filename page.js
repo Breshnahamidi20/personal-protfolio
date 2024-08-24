@@ -40,12 +40,10 @@ function setActiveSlide(index) {
 }
 
 slides.forEach((slide, index) => {
-    const circle = document.createElement('div');
-    circle.classList.add('circle');
-    circle.addEventListener('click', () => {
-      setActiveSlide(index);
-    });
-    circles.appendChild(circle);
+  const circle = document.createElement('div');
+  circle.classList.add('circle');
+  circle.addEventListener('click', () => {
+    setActiveSlide(index);
   });
-
-
+  circles.appendChild(circle);
+});

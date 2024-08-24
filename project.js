@@ -57,40 +57,36 @@ const projectData = [
     liveLink: '//breshnahamidi20.github.io/cash-register/',
     sourceLink: '//github.com/Breshnahamidi20/cash-register',
   },
-  ];
-  
-  const projectsContainer = document.getElementById('projects-continer');
-  const projectsCard = document.getElementById('projects-card');
-  
-  
-  // Function to create and show the popup
-  function openPopup(longDescription, titile, image, liveLink, sourceLink) {
-    const popup = document.createElement('div');
-    popup.classList.add('popup');
-    popup.innerHTML = `
-      <div class="popup-content">
-      <h2>${titile}</h2>
-      <img src=${image}>
-        <p>${longDescription}</p>
-        <div class='popup-btn'>
-          <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
-          <a href="${sourceLink}"><button class="source-link">source code</button></a>
-        </div>  
-      </div>
-      <span class="close-popup" onclick="this.parentElement.remove()">&times;</span>
+];
+const projectsContainer = document.getElementById('projects-continer');
+// Function to create and show the popup
+function openPopup(longDescription, titile, image, liveLink, sourceLink) {
+  const popup = document.createElement('div');
+  popup.classList.add('popup');
+  popup.innerHTML = `
+    <div class="popup-content">
+    <h2>${titile}</h2>
+    <img src=${image}>
+    <p>${longDescription}</p>
+    <div class='popup-btn'>
+    <a href="${liveLink}"><button class="live-link">Live Demo</button></a>
+    <a href="${sourceLink}"><button class="source-link">source code</button></a>
+    </div>  
+    </div>
+    <span class="close-popup" onclick="this.parentElement.remove()">&times;</span>
     `;
-    projectsContainer.appendChild(popup);
-  }
+  projectsContainer.appendChild(popup);
+}
   
-  projectData.forEach((project) => {
-    const projectsElement = document.createElement('div');
-    projectsElement.classList.add('projects-card');
+projectData.forEach((project) => {
+  const projectsElement = document.createElement('div');
+  projectsElement.classList.add('projects-card');
   
-    projectsElement.innerHTML = `
-      <img src="${project.image}">
-      <h2>${project.titile}</h2>
-      <p class="project-description">${project.description}</p>
-      <button class="openPopupBtn">${project.button}</button>
+  projectsElement.innerHTML = `
+    <img src="${project.image}">
+    <h2>${project.titile}</h2>
+    <p class="project-description">${project.description}</p>
+    <button class="openPopupBtn">${project.button}</button>
     `;
     projectsContainer.appendChild(projectsElement);
   
