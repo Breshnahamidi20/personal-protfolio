@@ -180,6 +180,11 @@
   margin-top: 20px;
 }
 
+.space-contact p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
 .my-expert .expert-list div p {
   margin-left: 5px;
   justify-items: flex-start;
@@ -650,6 +655,11 @@
     margin-left: 0px;
   }
 
+  .lang-skills img {
+    width:252px;
+    height: 252px;
+  }
+
   #social-media-about img {
     width: 50px;
     height: 50px;
@@ -670,7 +680,13 @@
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-}
+ }
+
+  .soft-skills div div div {
+    width: 70%;
+    height: 79px;
+    font-size: 40px;
+  }
 
   .expert-year div:nth-child(1) {
     text-align: center;
@@ -771,7 +787,7 @@
   }
 
   .skills-chart {
-    height: 100hv;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -797,14 +813,9 @@
 
   .lang-skills {
     height: 300px;
-    gap:30px;
+    gap: 30px;
     text-align: center;
     padding-top: 0px;
-  }
-
-  .lang-skills img {
-    width:252px;
-    height: 252px;
   }
 
   .soft-skills {
@@ -818,26 +829,20 @@
 
   .soft-skills div div {
     width: 100%;
-    height: 72px;
+    height: 65px;
     background-color: white;
     border-radius: 43px;
-    border:2px solid #511F52;
+    border:2px solid #511f52;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 25px;
   }
 
-  .soft-skills div div div {
-    width: 70%;
-    height: 72px;
-    font-size: 40px;
-  }
-
-  .soft-skills  span {
+  .soft-skills span {
     background:rgb(255, 255, 255);
     margin-top: 40px;
     font-size: 40px;
-    color: #511F52;
+    color: #511f52;
     padding-bottom: 10px;
   }
 
@@ -869,11 +874,6 @@
     font-size: 100px;
   }
 
-  .space-contact p {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-
   .forms-div {
     width: 100%;
     max-width: 85%;
@@ -889,7 +889,6 @@
   .forms-div label {
     font-size: 30px;
     margin-bottom: 20px;
-    margin-left: 0px;
   }
 
   .form-responsive {
@@ -918,7 +917,6 @@
     border-radius: 20px;
     background-color: rgb(213, 201, 213);
     color: black;
-    margin-left: 0px;
     margin-bottom: 20px;
     font-size: 30px;
   }
