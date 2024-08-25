@@ -180,11 +180,6 @@
   margin-top: 20px;
 }
 
-.space-contact p {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
 .my-expert .expert-list div p {
   margin-left: 5px;
   justify-items: flex-start;
@@ -320,7 +315,7 @@
   margin-top: -2.3px;
 }
 
-.soft-skills  span {
+.soft-skills span {
   background: rgb(255, 255, 255);
   margin-top: 40px;
   font-size: 20px;
@@ -328,14 +323,13 @@
   padding-bottom: 10px;
 }
 
-/*form section */
+/* form section */
 .hidden {
   display: none;
 }
 
 .contact-page {
   width: 100%;
-  height: 0px;
   text-align: center;
 }
 
@@ -352,7 +346,7 @@
 .space-contact {
   width: 100%;
   height: 210px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .space-contact h2 {
@@ -362,6 +356,8 @@
 
 .space-contact p {
   margin-top: -40px;
+  margin-top: 10px;
+  font-size: 20px;
 }
 
 .forms-div {
@@ -370,7 +366,7 @@
   max-height: 700px;
   background-color: rgb(251, 247, 251);
   height: 100%;
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
   margin-top: 20px;
@@ -379,7 +375,6 @@
 .forms-div label {
   font-size: large;
   display: block;
-  margin-left: 0px;
 }
 
 .forms-div input {
@@ -392,7 +387,6 @@
   color: black;
   margin-left: 0px;
   margin-bottom: 10px;
-  box-shadow: #511f52;
 }
 
 .forms-div textarea {
@@ -436,14 +430,17 @@
   text-align: center;
 }
 
-@media (min-width:765px) {
+@media (min-width: 765px) {
   header {
     height: 104px;
     display: flex;
     justify-content: space-between;
   }
 
-  .ham-menu , .mobile-menu .active, #menu-img, .mobile-menu a img {
+  .ham-menu,
+  .mobile-menu .active,
+  #menu-img,
+  .mobile-menu a img {
     display: none;
   }
 
@@ -452,32 +449,29 @@
     width: 100%;
     max-width: 60%;
     height: 100px;
-    border: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    top: 0px;
     transition: .1s ease;
-    background-color: #A987A8;
+    background-color: #a987a8;
   }
   
-  .mobile-menu  ul {
+  .mobile-menu ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     margin-right: 10%;
     margin-top: 10px;
-    gap: 0px;
-    background-color: #A987A8;
+    background-color: #a987a8;
     text-align: center;
     font-size: 25px;
     padding: 0%;
     height: 30px;       
   }
 
-  .mobile-menu  ul li {
+  .mobile-menu ul li {
     text-align: center;
     margin: 0 0 auto;
   }
