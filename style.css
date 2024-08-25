@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'Acme';
-  src: url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
-  url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
-  font-weight: normal;
-  font-style: normal;
+  src:
+   url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
+   url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
+   font-weight: normal;
+   font-style: normal;
 }
 
 body {
- width:100%;
- margin:0;
- padding: 0%;
- font-family: Acme;
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  font-family: Acme;
 }
 
 header {
-  width:100%;
-  background-color: #A987A8;
+  width: 100%;
+  background-color: #a987a8;
   height: 66.6px;
-  position: absolute;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-direction: row;
   z-index: 1;
   color: #fff;
   font-size: smaller;
-   position: fixed;
+  position: fixed;
 }
 
 .mobile-menu {
   background-color: #fff;
-  border:10px solid #A987A8;
+  border: 10px solid #a987a8;
   height: 100vh;
-  max-height: 100hv;
-  width:100%;
+  max-height: 100vh;
+  width: 100%;
   max-width: 340px;
   position: fixed;
-  right:-360px;
+  right: -360px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -56,8 +56,8 @@ header {
   flex-direction: column;
   height: 25px;
   width: 45px;
-  top:20px;
-  background-image:none;
+  top: 20px;
+  background-image: none;
   margin-right: -20px;
 }
 
@@ -69,14 +69,14 @@ header {
 
 .ham-menu.active span:nth-child(1) {
   transform: translate(10%, 490%) rotate(45deg);
-  background-color: #511F52;
-  top:50%;
+  background-color: #511f52;
+  top: 50%;
   padding: 1px;
   z-index: 2;
 }
 
 .ham-menu.active span:nth-child(2) {
-  opacity: 0; 
+  opacity: 0;
   z-index: 0;
   background-color: rgb(236, 165, 245);
 }
@@ -94,10 +94,9 @@ header {
   color: black;
   text-align: left;
   gap: 30px;
-  font-size:xx-large;
+  font-size: xx-large;
   display: flex;
   position: relative;
-  font-family: Acme;
   flex-wrap: wrap;
 }
 
@@ -122,13 +121,12 @@ header {
 .line {
   width: 1px;
   height: 52px;
-  background-color: #511F52;
+  background-color: #511f52;
   margin-left: 20px;
-  transform: 90%;
 }
 
 .menu-img {
-  width:70px;
+  width: 70px;
   height: 70px;
   border-radius: 50px;
   margin-left: 20px;
@@ -160,9 +158,9 @@ header {
 .close1-btn {
   float: right;
   cursor: pointer;
-  color: #511F52;
+  color: #511f52;
   font-size: 140px;
-  width:100px;
+  width: 100px;
   height: 100px;
   margin-top: -60px;
   margin-right: -20px;
@@ -171,14 +169,14 @@ header {
 .popup1-content h1 {
   text-align: left;
   margin-top: 50px;
-  justify-content:start;
+  justify-content: start;
   font-size: 40px;
   margin-left: 40px;
   font-weight: 400;
 }
 
 .slider {
-  width:85%;
+  width: 85%;
   border: 2px solid black;
   height: 452px;
   display: flex;
@@ -202,7 +200,7 @@ header {
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
-  }
+}
 
 .slide  img {
   width: 100%;
@@ -220,11 +218,11 @@ header {
   height: 14px;
   margin-left: auto;
   margin-right: auto;
-  gap:4%;
+  gap: 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  }
+}
 
 .circle {
   width: 13px;
@@ -234,16 +232,16 @@ header {
   display: inline-block;
   margin: 0 5px;
   cursor: pointer;
-  border: 1px solid #511F52;;
+  border: 1px solid #511f52;
   margin-right: 10px;
 }
-   
-/* desgin for home page*/
+
+/* desgin for home page */
 .home {
   height: 800px;
   width: 100%;
   top: 60px;
-  background-color: #F9F5F9; ;
+  background-color: #f9f5f9;
   z-index: -1;
 }
 
@@ -255,14 +253,14 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-   z-index: 0;
-   background-color: #F9F5F9;;
+  z-index: 0;
+  background-color: #f9f5f9;
 }
 
 .image-div {
   width: 290px;
   height: 290px;
-  border: 5px solid #511F52;
+  border: 5px solid #511f52;
   display: flex;
   border-radius: 50%;
   margin-top: 100px;
@@ -277,7 +275,7 @@ header {
   width: 100%;
   height: 250px;
   max-width: 85%;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -318,10 +316,10 @@ header {
   text-decoration: none;
 }
 
-#btn a  {
+#btn a {
   text-decoration: none;
   width: 150px;
-  height: 35px ;
+  height: 35px;
   color: white;
 }
 
@@ -329,7 +327,7 @@ header {
   color: #511f52;
 }
 
-.read-btn{
+.read-btn {
   width: 150px;
   height: 35px;
   padding: 3px;
@@ -338,7 +336,7 @@ header {
   border: 2px solid #511f52;
   border-radius: 10%;
   cursor: pointer;
-} 
+}
 
 #read-btn {
   background-color: #fff;
@@ -350,7 +348,9 @@ header {
   background-color: #ffff;
   color: #511f52;
 }
+
 /* css for about section */
+
 /*
 .main1 {
     display: none;
@@ -359,7 +359,7 @@ header {
 #about {
   height: 660px;
   width: 100%;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   z-index: -1;
 }
 
@@ -373,13 +373,13 @@ header {
 }
 
 .about-div {
-  width:100%;
+  width: 100%;
   height: 500px;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
   position: absolute;
 }
@@ -387,7 +387,7 @@ header {
 .img-div-about {
   width: 290px;
   height: 290px;
-  border: 5px solid #511F52;
+  border: 5px solid #511f52;
   display: flex;
   border-radius: 50%;
 }
@@ -399,7 +399,7 @@ header {
 
 .p-cv {
   text-align: center;
-  width:100%;
+  width: 100%;
   max-width: 85%;
   height: 180px;
   background-color: #F9F5F9;
@@ -408,19 +408,19 @@ header {
   flex-direction: column;
 }
 
- #cv-dwlod {
-   width:100px;
-   height: 30px;
-   border-radius: 5px;
-   font-size: 13px;
-   color:white;
-   text-decoration: none;
-   background-color: #511F52;
- }
+#cv-dwlod {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  background-color: #511f52;
+}
 
 /* certifcates css style */
 #education {
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   height: 1440px;
   width: 100%;
 }
@@ -437,45 +437,45 @@ header {
   width: 100%;
   display: flex;
   height: 1420px;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  }
+}
 
 #certificate-continer {
- top: 100px;
+  top: 100px;
   width: 100%;
   height: 1320px;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  }
+}
 
-  .response-card {
-    width: 100%;
-    max-width: 90%;
-    height: 396px;
-    background-color: #EEE6EE;
-    border: 1px solid #511F52;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+.response-card {
+  width: 100%;
+  max-width: 90%;
+  height: 396px;
+  background-color: #eee6ee;
+  border: 1px solid #511f52;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  .response-card img {
-    width: 100%;
-    max-width: 1000%;
-    height: 225px;
-    border: 1px solid black;
-    margin-top: 3%;
-  }
+.response-card img {
+  width: 100%;
+  max-width: 1000%;
+  height: 225px;
+  border: 1px solid black;
+  margin-top: 3%;
+}
 
 .response-card a {
   display: block;
@@ -488,25 +488,25 @@ header {
 }
 
 .response-card p {
-  width:80%;
+  width: 80%;
 }
 
 /* desing for skill section */
 #skills {
-  width:100%;
+  width: 100%;
   height: 400px;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   margin-top: -20px;
 }
 
 .skill-chart {
   width: 100%;
-  height: 100hv;
-  background-color: #F9F5F9;
+  height: 100vh;
+  background-color: #f9f5f9;
   text-align: center;
 }
 
-.skill-chart p{
+.skill-chart p {
   line-height: 0px;
   text-align: center;
 }
@@ -514,7 +514,7 @@ header {
 .skills-continer {
   height: 390px;
   width: 100%;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -523,9 +523,8 @@ header {
 .lang-skill {
   width: 100%;
   height: 110px;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   text-align: center;
-  padding-top:0px;
 }
 
 .lang-skill img {
@@ -535,7 +534,7 @@ header {
 .soft-skill {
   width: 100%;
   height: 190px;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -548,7 +547,7 @@ header {
   height: 20px;
   background-color: white;
   border-radius: 43px;
-  border:2px solid #511F52;
+  border:2px solid #511f52;
   margin-right: 10px;
   margin-top: 3px;
   margin-bottom: 15px;
@@ -557,15 +556,15 @@ header {
 .soft-skill div div div div {
   width: 120px;
   height: 18px;
-  background-color: #511F52;
+  background-color: #511f52;
   border-radius:   43px 0 0 43px ;
   text-align: center;
-  color:white;
+  color: white;
   margin-top: -2.9px;
 }
 
 .soft-skill  span {
-  background:white;
+  background: white;
   margin-bottom: 30px;
   font-size: large;
 }
@@ -600,17 +599,18 @@ header {
   height: 20px;
 }
 
-/*desing for project */
-/*project css */
+/* desing for project */
+
+/* project css */
 .project {
-  width:100%;
+  width: 100%;
   height: 1740px;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
 }
 
 .project-see-more {
@@ -625,12 +625,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
 }
 
 .project-continer {
   width: 100%;
-  height: 1610px ;
+  height: 1610px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -641,7 +641,7 @@ header {
   width: 100%;
   max-width: 390px;
   height: 512px;
-  background-color: #EEE6EE;
+  background-color: #eee6ee;
   border: 1px solid rebeccapurple;
   display: flex;
   text-align: center;
@@ -675,10 +675,10 @@ header {
   width: 100%;
   max-width: 90%;
   height: 13%;
-  border:3px solid #511F52;
-  background-color: #511F52;
+  border: 3px solid #511f52;
+  background-color: #511f52;
   color: #fff;
-  font-size:30px ;
+  font-size: 30px;
   font-weight: 400;
   line-height: 37px;
   border-radius: 7px;
@@ -709,20 +709,20 @@ header {
   width: 100%;
   height: 70%;
   max-width: 80%;
-  background-color: #F4EEF4;
+  background-color: #f4eef4;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top:15%;
+  top: 15%;
   left: auto;
   right: auto;
   bottom: 15%;
 }
- 
+
 .popup-content {
-  background-color:  #F4EEF4;
-  width:100%;
+  background-color: #f4eef4;
+  width: 100%;
   height: 100vh;
   padding: 10px;
   border-radius: 8px;
@@ -743,7 +743,7 @@ header {
   right: 5px;
   font-size: 50px;
   cursor: pointer;
-  color: #511F52;
+  color: #511f52;
   text-align: right;
   position: absolute;
 }
@@ -765,7 +765,7 @@ header {
 
 .popup-content a button:hover {
   background-color: #fad9f9;
-  color:#511F52
+  color:#511f52
 }
 
 .popup-content a {
@@ -773,9 +773,9 @@ header {
   color: rebeccapurple;
 }
 
-/*form section */
+/* form section */
 .hidden {
-    display: none;
+  display: none;
 }
 .contact-page {
   width: 100%;
@@ -798,31 +798,30 @@ header {
   justify-content: center ;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #F9F5F9;
+  background-color: #f9f5f9;
   top: 10;
-  gap:40px;
+  gap: 40px;
 }
 
 .contact-me {
   width: 100%;
   max-width: 83%;
   height: 430px;
-  background-color: #F9F5F9;
-  margin-left:  auto;
+  background-color: #f9f5f9;
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
-  padding:0px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
   border-radius: 10px;
-  border: 1px solid #511F52;
+  border: 1px solid #511f52;
 }
 
 .form-div {
   display: flex;
   flex-direction: column;
-  padding: 0%;
   border-radius: 10px;
-  border: 1px solid #511F52;
-  background-color: #F9F5F9;
+  border: 1px solid #511f52;
+  background-color: #f9f5f9;
   height: 430px;
   width: 90%;
   margin-left: auto;
@@ -845,7 +844,7 @@ label {
 input {
   width: 90%;
   height: 30px;
-  border: 1px solid #511F52;
+  border: 1px solid #511f52;
   border-radius: 5px;
   background-color: #ceb3cd;
   color: black;
@@ -856,7 +855,7 @@ textarea {
   width:90%;
   height:100px;
   display: block;
-  border: 1px solid #511F52;
+  border: 1px solid #511f52;
   border-radius: 5px;
   background-color: #ceb3cd;
   margin-left: auto;
@@ -866,21 +865,21 @@ textarea {
 .submit {
   display: block;
   text-align: center;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
-  width:100%;
+  width: 100%;
   max-width: 120px;
   height: 27px;
-  border: 3px solid #511F52;
-  background-color: #ffffff;
-  color: #511F52;
+  border: 3px solid #511f52;
+  background-color: #fff;
+  color: #511f52;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .submit:hover {
-  background-color: #511F52;
+  background-color: #511f52;
   color: #fff;
 }
 
@@ -895,7 +894,7 @@ textarea {
   background-color: #986299;
 }
 
-/* contact section*/
+/* contact section */
 .contact-me {
   width: 100%;
   max-height: 380px;
@@ -927,9 +926,9 @@ textarea {
   position: relative;
   top:-30px;
   margin-left: 60px;
- }
+}
  
- .contact-me img{
+.contact-me img {
   width: 30px;
   display: inline-flex;
   height: 22px;
@@ -944,7 +943,7 @@ footer image {
 footer {
   width: 100%;
   height: 119px;
-  background-color: #A987A8;
+  background-color: #a987a8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -972,7 +971,7 @@ footer {
 }
 
 footer hr {
-  width:45% ;
+  width: 45%;
   height: 1px;
   background-color: white;
 }
@@ -989,17 +988,17 @@ footer hr {
   }
 
   .mobile-menu {
-    right:10px;
-    width:100%;
+    right: 10px;
+    width: 100%;
     max-width: 50%;
     height: 100px;
-    border:0px;
+    border: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     transition: .1s ease;
-    background-color: #A987A8;
+    background-color: #a987a8;
   }
 
   .mobile-menu  ul {
@@ -1007,10 +1006,10 @@ footer hr {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-right:10%;
+    margin-right: 10%;
     margin-top: 10px;
-    gap:2px;
-    background-color: #A987A8;
+    gap: 2px;
+    background-color: #a987a8;
     text-align: center;
     font-size: 25px;
     padding: 0%;
@@ -1106,14 +1105,14 @@ footer hr {
   }
 
   #social-media  img {
-    width:100%;
+    width: 100%;
     height: 60%;
   }
 
   #btn {
-    gap:5%;
+    gap: 5%;
     margin-top: -200px;
-    width:100%;
+    width: 100%;
     height: 80px;
     align-items: center;
     display: flex;
@@ -1124,7 +1123,7 @@ footer hr {
   .cv-btn, 
   .read-btn {
     width: 30%;
-    height:50% ;
+    height: 50% ;
   }
  
   #about {
@@ -1139,7 +1138,7 @@ footer hr {
   .about-div {
     height: 500px;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     gap: 7%;
     margin-top: -30px;
   }
@@ -1161,7 +1160,7 @@ footer hr {
   }
 
   #cv-dwlod {
-    width:150px;
+    width: 150px;
     height: 40px;
     font-size: 20px;
     margin-top: 0px;
@@ -1172,7 +1171,6 @@ footer hr {
   }
 
  /* desing for skill section */
-
   #skills {
     width: 100%;
     height: 1000px;
@@ -1200,14 +1198,14 @@ footer hr {
     height: 840px;
     width: 100%;
     max-width: 80%;
-    background-color: #F9F5F9;
+    background-color: #f9f5f9;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    border:2px solid #511F52;
-    box-shadow: #511F52;
+    border:2px solid #511f52;
+    box-shadow: #511f52;
     margin-top: 60px;
   }
 
@@ -1239,13 +1237,13 @@ footer hr {
   .professionalskill {
     width: 50%;
     height: 840px;
-    background-color: #F9F5F9;
+    background-color: #f9f5f9;
   }
 
   .softskill {
     width: 50%;
     height: 840px;
-    background-color: #F9F5F9;
+    background-color: #f9f5f9;
 }
 
   .soft-skill  div div div {
@@ -1253,7 +1251,7 @@ footer hr {
     height: 65px;
     background-color: white;
     border-radius: 43px;
-    border:2px solid #511F52;
+    border: 2px solid #511f52;
     margin-right: 10px;
     margin-top: 30px;
     margin-bottom: 35px;
@@ -1263,19 +1261,19 @@ footer hr {
     width: 220px;
     height: 65px;
     background-color: #511F52;
-    border-radius:   43px 0 0 43px ;
+    border-radius:   43px 0 0 43px;
     text-align: center;
-    color:white;
+    color: white;
     margin-top: -2.9px;
     font-size: 40px;
   }
 
   .soft-skill span {
-    background: #F9F5F9;
+    background: #f9f5f9;
     margin-bottom: 30px;
     font-size: 40px;
     margin-left: -190px;
-    color: #511F52;
+    color: #511f52;
   }
 
   .professionalskill span {
@@ -1292,7 +1290,7 @@ footer hr {
   }
 
   #TeamWork {
-    width:89%;
+    width: 89%;
     height: 65px;
   }
 
@@ -1338,12 +1336,12 @@ footer hr {
   }
 
   .certificate-page {
-    height: 700px ;
+    height: 700px;
   }
 
   #certificate-continer {
     height: 600px;
-    gap:5px;
+    gap: 5px;
   }
 
   .response-card {
@@ -1355,6 +1353,7 @@ footer hr {
     line-height: 13px;
     font-size: 13px;
   }
+
 /* style for project section */
   .project {
     height: 1000px;
@@ -1365,15 +1364,15 @@ footer hr {
     width: 100%;
     max-width: 200px;
     height: 50px;
-    border: 3px solid #511F52;
-    background-color: #511F52;
+    border: 3px solid #511f52;
+    background-color: #511f52;
     color: #fff;
-    font-size: 30px ;
+    font-size: 30px;
     font-weight: 400;
     line-height: 37px;
     border-radius: 7px;
     cursor: pointer;
-    margin-top:-100px ;
+    margin-top: -100px;
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
@@ -1386,7 +1385,7 @@ footer hr {
     margin-top: -70px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #F9F5F9;
+    background-color: #f9f5f9;
   }
 
   .more-project {
@@ -1406,6 +1405,7 @@ footer hr {
   .project-see-more:hover {
     background: #511f52ad;
   }
+
   .project-list {
     height: 700px;
   }
@@ -1413,7 +1413,7 @@ footer hr {
   .project-list h1 {
     font-size: 50px;
     margin-top: 30px;
-    line-height:10px ;
+    line-height: 10px;
     margin-bottom: 70px;
   }
 
@@ -1429,7 +1429,7 @@ footer hr {
   .project-card {
     max-width: 28%;
     height: 80%;
-  } 
+  }
 
   .popup .popup3{
     position: fixed;
@@ -1441,12 +1441,12 @@ footer hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top:20%;
+    top: 20%;
     left: auto;
     right: auto;
     bottom: 20%;
   }
-  
+
   .popup-content {
     background-color:  rgb(248, 233, 250);
     width: 100%;
@@ -1459,14 +1459,13 @@ footer hr {
     flex-direction: column;
   }
 
-  
   .close-popup {
     position: absolute;
     top: -20px;
     right: 5px;
     font-size: 70px;
     cursor: pointer;
-    color: #511F52;
+    color: #511f52;
     text-align: right;
   }
 
@@ -1484,9 +1483,10 @@ footer hr {
     border-radius: 4px;
     cursor: pointer;
   }
+
   .popup-content  button :hover {
     background-color: #aaaaaa;
-    color:#511F52
+    color:#511f52
   }
 
   .popup-content a {
@@ -1510,29 +1510,29 @@ footer hr {
   .form-contact {
     width: 90%;
     height: 560px;
-    border: 3px solid #511F52;
+    border: 3px solid #511f52;
     border-radius: 10px;
-    gap:-400px;
-    background-color: #EEE6EE;
+    gap: -400px;
+    background-color: #eee6ee;
   }
 
   .contact-me {
     max-width: 35%;
     height: 90%;
     padding: 25px;
-    background-color: #EEE6EE;
+    background-color: #eee6ee;
   }
 
   .form-div {
     width: 37%;
-    background-color: #EEE6EE;
+    background-color: #eee6ee;
   }
 
   .submit {
     max-width: 150px;
     height: 41px;
-    border: 3px solid #511F52;
-    background-color: #511F52;
+    border: 3px solid #511f52;
+    background-color: #511f52;
     color: #fff;
     font-size: 90%;
   }
@@ -1555,7 +1555,7 @@ footer hr {
   }
 
   .social-media-footer a img {
-    width:80px;
+    width: 80px;
     height: 80px;
   }
 }
@@ -1576,7 +1576,7 @@ footer hr {
   }
 
   .img-div-about {
-    width:450px;
+    width: 450px;
     height: 450px;
  }
 
@@ -1604,6 +1604,7 @@ footer hr {
     color: white;
     border-radius: 5px;
   }
+  
   .myblog p {
     font-size: 15px;
     text-align: center;
