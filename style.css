@@ -1,17 +1,18 @@
 @font-face {
   font-family: 'Acme';
   src:
-   url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
-   url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
-   font-weight: normal;
-   font-style: normal;
+    url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
+    url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
+   
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   width: 100%;
   margin: 0;
   padding: 0%;
-  font-family: Acme;
+  font-family:'Acme';
 }
 
 header {
@@ -41,7 +42,7 @@ header {
   justify-content: flex-start;
   font-size: 3rem;
   transition: .3s ease;
-  z-index: 2;
+  z-index: 0;
 }
 
 .mobile-menu.active {
@@ -1604,7 +1605,7 @@ footer hr {
     color: white;
     border-radius: 5px;
   }
-  
+
   .myblog p {
     font-size: 15px;
     text-align: center;
