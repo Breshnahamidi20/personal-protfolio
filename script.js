@@ -164,7 +164,7 @@ projectData.forEach((project) => {
   projectElement.classList.add('project-card');
 
   projectElement.innerHTML = `
-    <img src='${project.image}'>
+    <img src='${project.image}' class='project-card-img'>
     <h2>${project.titile}</h2>
     <p>${project.description}</p>
     <button class="openPopupBtn">${project.button}</button>

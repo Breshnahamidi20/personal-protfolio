@@ -652,7 +652,7 @@ header {
   margin-bottom: 20px;
 }
 
-.project-card img {
+.project-card-img {
   margin-top: 20px;
   width: 90%;
   height: 40%;
@@ -909,7 +909,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-.contact-me a {
+.contact-me-a {
   text-decoration: none;
   color: black;
 }
@@ -922,7 +922,7 @@ textarea {
   font-size: medium;
   display: flex;
   position: relative;
-  top:-30px;
+  top: -30px;
   margin-left: 60px;
 }
 
@@ -1033,7 +1033,7 @@ footer hr {
     font-size: 65%;
     font-style: normal;
     gap: 10px;
- }
+  }
 
   .option-menu:hover {
     color: #fcfcfc;
@@ -1168,7 +1168,7 @@ footer hr {
     line-height: 0px;
   }
 
- /* desing for skill section */
+  /* desing for skill section */
   #skills {
     width: 100%;
     height: 1000px;
@@ -1353,7 +1353,7 @@ footer hr {
     font-size: 13px;
   }
 
-/* style for project section */
+  /* style for project section */
   .project {
     height: 1000px;
   }
@@ -1397,7 +1397,7 @@ footer hr {
     justify-content: center;
   }
 
-  .more-project .project-card {
+  .project-card {
     width: 700px;
   }
 
@@ -1430,7 +1430,8 @@ footer hr {
     height: 80%;
   }
 
-  .popup .popup3{
+  .popup,
+  .popup3{
     position: fixed;
     width: 100%;
     height: 60%;
@@ -1483,8 +1484,8 @@ footer hr {
     cursor: pointer;
   }
 
-  .popup-content  button :hover {
-    background-color: #aaaaaa;
+  .popup-content button:hover {
+    background-color: #aaa;
     color: #511f52;
   }
 
