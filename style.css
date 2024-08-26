@@ -203,7 +203,7 @@ header {
   margin-right: auto;
 }
 
-.slide img {
+.slide-img {
   width: 100%;
   height: 377px;
   margin-left: auto;
@@ -267,7 +267,7 @@ header {
   margin-top: 100px;
 }
 
-.image-div img {
+.image-div-img {
   width: 100%;
   height: 100%;
 }
@@ -393,7 +393,7 @@ header {
   border-radius: 50%;
 }
 
-.img-div-about img {
+.img-div-about-img {
   width: 100%;
   height: 103%;
 }
@@ -470,7 +470,7 @@ header {
   align-items: center;
 }
 
-.response-card img {
+.response-card-img {
   width: 100%;
   max-width: 1000%;
   height: 225px;
@@ -478,7 +478,7 @@ header {
   margin-top: 3%;
 }
 
-.response-card a {
+.response-card-a {
   display: block;
   text-decoration: none;
 }
@@ -750,7 +750,8 @@ header {
   position: absolute;
 }
 
-.popup-content a button {
+.live-link,
+.source-link {
   width: 400px;
   height: 60px;
   background-color: rgb(250, 250, 250);
@@ -761,12 +762,17 @@ header {
   margin-bottom: 40px;
 }
 
-.popup-content a button:hover {
+.source-link:hover {
   background-color: #fad9f9;
   color: #511f52;
 }
 
-.popup-content a {
+.live-link:hover {
+  background-color: #fad9f9;
+  color: #511f52;
+}
+
+.popup-content-a {
   text-decoration: none;
   color: rebeccapurple;
   width: 40px;
@@ -898,7 +904,7 @@ textarea {
   font-size: 37px;
 }
 
-.contact-me li {
+.contact-me-li {
   list-style: none;
   margin-bottom: 30px;
 }
@@ -920,7 +926,7 @@ textarea {
   margin-left: 60px;
 }
 
-.contact-me img {
+.contact-me-img {
   width: 30px;
   display: inline-flex;
   height: 22px;
@@ -955,7 +961,7 @@ footer {
   text-align: center;
 }
 
-.myblog a {
+.myblog-a {
   font-size: 10px;
   color: white;
 }
@@ -989,7 +995,7 @@ footer hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    transition: .1s ease;
+    transition: 0.1s ease;
     background-color: #a987a8;
   }
 
@@ -1008,12 +1014,12 @@ footer hr {
     height: 30px;
   }
 
-  .mobile-menu  ul li {
+  .mobile-menu ul li {
     text-align: center;
     margin: 0 0 auto;
   }
 
-  .line  {
+  .line {
     display: none;
   }
 
@@ -1024,8 +1030,8 @@ footer hr {
     justify-content: center;
     color: black;
     text-align: center;
-    font-size:65%;
-    font-family: Acme;
+    font-size: 65%;
+    font-style: normal;
     gap: 10px;
  }
 
@@ -1087,7 +1093,7 @@ footer hr {
     line-height: 20px;
     font-size: 50%;
   }
-    
+
   #social-media {
     margin-top: -70px;
     width: 100%;
@@ -1155,7 +1161,7 @@ footer hr {
     width: 150px;
     height: 40px;
     font-size: 20px;
-    margin-top: 0px;
+    margin-top: 0.0001px;
   }
 
   h2 {
@@ -1196,8 +1202,7 @@ footer hr {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    border:2px solid #511f52;
-    box-shadow: #511f52;
+    border: 2px solid #511f52;
     margin-top: 60px;
   }
 
@@ -1254,8 +1259,8 @@ footer hr {
   .div3 {
     width: 220px;
     height: 66px;
-    background-color: #511F52;
-    border-radius:   43px 0 0 43px;
+    background-color: #511f52;
+    border-radius: 43px 0 0 43px;
     text-align: center;
     color: white;
     margin-top: -2.4px;
@@ -1324,7 +1329,7 @@ footer hr {
   }
 
   .certificate-page h1 {
-    margin-top: 0px;
+    margin-top: 0.0001px;
     font-size: 50px;
     font-weight: 400;
   }
@@ -1343,7 +1348,7 @@ footer hr {
     height: 80%;
   }
 
-  .response-card p{
+  .response-card p {
     line-height: 13px;
     font-size: 13px;
   }
@@ -1548,7 +1553,7 @@ footer hr {
     height: 200px;
   }
 
-  .social-media-footer a img {
+  .social-media-footer-a-img {
     width: 80px;
     height: 80px;
   }

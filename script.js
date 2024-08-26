@@ -93,7 +93,7 @@ cardData.forEach((card) => {
 
   cardElement.innerHTML = `
   
-    <a href="${card.link}"><img src="${card.image}" alt="Image"></a>
+    <a href="${card.link}" class='response-card-a'><img src="${card.image}" alt="Image" class='response-card-img'></a>
     <h2>${card.titile}</h2>
     <p>${card.description}</p>
     
@@ -149,8 +149,8 @@ function openPopup(longDescription, titile, image, liveLink, sourceLink) {
     <img src='${image}'>
       <p>${longDescription}</p>
       <div class='popup-btn'>
-      <a href='${liveLink}'><button class='live-link'>Live Demo</button></a>
-      <a href='${sourceLink}'><button class='source-link'>source code</button></a>
+      <a href='${liveLink}' class='popup-content-a'><button class='live-link'>Live Demo</button></a>
+      <a href='${sourceLink}' class='popup-content-a'><button class='source-link'>source code</button></a>
       </div>
       
     </div>

@@ -154,8 +154,6 @@
   flex-direction: column;
 }
 
-
-
 .my-expert .expert-list div {
   display: flex;
   flex-direction: row;
@@ -261,7 +259,7 @@
   height: 190px;
 }
 
-.space-skill p {
+.space-skill-p {
   text-align: center;
 }
 
@@ -355,7 +353,7 @@
   font-size: 50px;
 }
 
-.space-contact p {
+.space-contact-p {
   margin-top: -40px;
   margin-top: 10px;
   font-size: 20px;
@@ -508,7 +506,7 @@
     height: 2140px;
   }
 
-  .projects-list  h1 {
+  .projects-list h1 {
     margin-top: 200px;
     font-size: 80px;
   }
@@ -728,7 +726,7 @@
     font-size: 30px;
   }
 
-  .my-expert .expert-list div img {
+  .expert-list-div-img {
     display: inline;
     width: 120px;
     height: 120px;
@@ -784,7 +782,7 @@
     font-size: 110px;
   }
 
-  .space-skill p {
+  .space-skill-p {
     text-align: center;
     font-size: 20px;
     margin-top: 380px;
@@ -796,7 +794,7 @@
     text-align: center;
   }
 
-  .lang-skills img {
+  .skill-imgs {
     width: 252px;
     height: 252px;
   }
@@ -826,6 +824,7 @@
     height: 79px;
     font-size: 40px;
   }
+
   .soft-skills span {
     background: rgb(255, 255, 255);
     margin-top: 40px;
