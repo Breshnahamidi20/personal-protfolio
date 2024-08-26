@@ -40,7 +40,7 @@ form.addEventListener('submit', (event) => {
     message: document.getElementById('message').value,
   };
 
-  if (formData.name && formData.lastname && formData.companyname 
+  if (formData.name && formData.lastname && formData.companyname
     && formData.email && formData.number && formData.message) {
     // Send form data using Formspree
     // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual endpoint
@@ -49,12 +49,12 @@ form.addEventListener('submit', (event) => {
       body: JSON.stringify(formData),
       headers: {
         'Content-Type': 'application/json',
-      }
-    }).then( (response) => {
+      },
+    }).then((response) => {
       if (response.ok) {
         // Form successfully sent
         localStorage.removeItem('formData'); // Clear local storage
-        window.alert('Form submitted successfully!');
+        console.log('Form submitted successfully!');
         form.reset();
       } else {
         errorMessage.style.display = 'block';
