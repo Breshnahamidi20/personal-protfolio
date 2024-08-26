@@ -875,6 +875,11 @@ textarea {
   color: #fff;
 }
 
+#errorMessage {
+  display: none;
+  color: red;
+}
+
 /* contact section */
 .contact-me {
   width: 100%;

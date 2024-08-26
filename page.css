@@ -571,13 +571,13 @@
     position: relative;
     margin-top: 20px;
   }
-  
+
   .slide1 {
     display: none;
     position: absolute;
-    margin-top: 0px;
+    margin-top: 0.0001px;
   }
-  
+
   .actives1 {
     display: block;
     width: 75%;
@@ -587,14 +587,14 @@
     margin-right: auto;
     background-color: lawngreen;
   }
-  
+
   .slide1-img {
     width: 100%;
     height: 377px;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .circles1 {
     position: absolute;
     top: 300px;
@@ -610,7 +610,7 @@
     justify-content: space-between;
     background-color: darkmagenta;
   }
-  
+
   .circle1 {
     width: 50px;
     height: 33px;
@@ -620,9 +620,7 @@
     margin: 0 5px;
     cursor: pointer;
     border: 2px solid #511f52;
-    
   }
-  
 
   .aboutcontiner .p1 {
     width: 99%;
@@ -932,5 +930,10 @@
   .forms-div .submit:hover {
     background-color: #511f52;
     color: #fff;
+  }
+
+  #errorMessage {
+    display: none;
+    color: red;
   }
 }
