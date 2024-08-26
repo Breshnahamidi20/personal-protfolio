@@ -40,8 +40,8 @@ form.addEventListener('submit', (event) => {
     message: document.getElementById('message').value,
   };
 
-  if (formData.name && formData.lastname && formData.companyname && 
-    formData.email && formData.number && formData.message) {
+  if (formData.name && formData.lastname && formData.companyname 
+    && formData.email && formData.number && formData.message) {
     // Send form data using Formspree
     // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual endpoint
     fetch('https://formspree.io/YOUR_FORMSPREE_ENDPOINT', {

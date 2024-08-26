@@ -305,11 +305,11 @@ form.addEventListener('submit', (event) => {
       headers: {
         'Content-Type': 'application/json',
       },
-    }).then( (response) => {
+    }).then((response) => {
       if (response.ok) {
         // Form successfully sent
         localStorage.removeItem('formData'); // Clear local storage
-        alert('Form submitted successfully!');
+        window.alert('Form submitted successfully!');
         form.reset();
       } else {
         errorMessage.style.display = 'block';
