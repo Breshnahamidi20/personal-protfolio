@@ -752,14 +752,14 @@ header {
 
 .live-link,
 .source-link {
-  width: 400px;
-  height: 60px;
+  width: 300px;
+  height: 20px;
   background-color: rgb(250, 250, 250);
   border: 1px solid rebeccapurple;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 70px;
-  margin-bottom: 40px;
+  margin-top: 7px;
+  margin-bottom: 4px;
 }
 
 .source-link:hover {
@@ -873,17 +873,6 @@ textarea {
 .submit:hover {
   background-color: #511f52;
   color: #fff;
-}
-
-#error {
-  color: rgb(255, 0, 0);
-  width: 100px;
-  height: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: -49px;
-  background-color: #986299;
 }
 
 /* contact section */
@@ -1469,17 +1458,18 @@ footer hr {
     width: 80%;
     height: 40px;
     margin-top: 30px;
+    gap:60px;
   }
 
   .popup-content a button {
-    width: 40%;
+    width: 30%;
     height: 20px;
     background-color: rgb(250, 250, 250);
     border: 1px solid rebeccapurple;
     border-radius: 4px;
     cursor: pointer;
   }
-
+  
   .popup-content button:hover {
     background-color: #aaa;
     color: #511f52;
@@ -1514,7 +1504,7 @@ footer hr {
 
   .contact-me {
     max-width: 35%;
-    height: 90%;
+    height: 67%;
     padding: 25px;
     background-color: #eee6ee;
   }

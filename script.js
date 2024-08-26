@@ -263,36 +263,60 @@ projectmData.forEach((projectm) => {
   });
 });
 
-// js of form section
+
 const form = document.getElementById('contactForm');
-const errorText = document.getElementById('error');
+const errorMessage = document.getElementById('errorMessage');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value.toLowerCase();
-  const message = document.getElementById('message').value;
-  if (!name || !email || !message) {
-    errorText.style.display = 'block';
-    return;
+// Load data from local storage
+document.addEventListener('DOMContentLoaded', function() {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+    document.getElementById('name').value = formData.name;
+    document.getElementById('email').value = formData.email;
+    document.getElementById('message').value = formData.message;
   }
-
-  const formData = { name, email, message };
-  localStorage.setItem('formData', JSON.stringify(formData));
-
-  // Here you can send the form data to Formspree service
-
-  form.reset();
-  errorText.style.display = 'none';
 });
 
-window.addEventListener('load', () => {
-  const savedFormData = localStorage.getItem('formData');
-  if (savedFormData) {
-    const { name, email, message } = JSON.parse(savedFormData);
-    document.getElementById('name').value = name;
-    document.getElementById('email').value = email;
-    document.getElementById('message').value = message;
+// Save data to local storage when input changes
+form.addEventListener('input', function() {
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value.toLowerCase(),
+    message: document.getElementById('message').value
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+// Form submit
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value.toLowerCase(),
+    message: document.getElementById('message').value
+  };
+
+  if (formData.name && formData.email && formData.message) {
+    // Send form data using Formspree
+    // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual endpoint
+    fetch('https://formspree.io/YOUR_FORMSPREE_ENDPOINT', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        // Form successfully sent
+        localStorage.removeItem('formData'); // Clear local storage
+        alert('Form submitted successfully!');
+        form.reset();
+      } else {
+        errorMessage.style.display = 'block';
+      }
+    });
+  } else {
+    errorMessage.style.display = 'block';
   }
 });

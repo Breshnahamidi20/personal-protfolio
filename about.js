@@ -8,11 +8,11 @@ function setActiveSlide(index) {
   circles1.children[currentSlide].style.backgroundColor = 'white';
   currentSlide = index;
   slides1[currentSlide].classList.add('actives1');
-  circles1.children[currentSlide].classList.add('actives');
-  circles1.children[currentSlide].style.backgroundColor = '#511F52';
+  circles1.children[currentSlide].classList.add('actives1');
+  circles1.children[currentSlide].style.backgroundColor = 'black';
 }
 
-slides1.forEach((slide1, index) => {
+slides1.forEach((slide, index) => {
   const circle1 = document.createElement('div');
   circle1.classList.add('circle1');
   circle1.addEventListener('click', () => {

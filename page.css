@@ -418,16 +418,6 @@
   color: #fff;
 }
 
-#error {
-  color: rgb(0, 255, 13);
-  background-color: #511f52;
-  width: 100px;
-  height: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
 @media (min-width: 765px) {
   header {
     height: 104px;
@@ -581,55 +571,58 @@
     position: relative;
     margin-top: 20px;
   }
-
+  
   .slide1 {
     display: none;
-    position: relative;
-    margin-left: 20px;
-    margin-right: auto;
+    position: absolute;
+    margin-top: 0px;
   }
-
+  
   .actives1 {
     display: block;
-    width: 90%;
-    height: 85%;
-    margin-top: -70px;
+    width: 75%;
+    height: 60%;
+    margin-top: -120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lawngreen;
+  }
+  
+  .slide1-img {
+    width: 100%;
+    height: 377px;
     margin-left: auto;
     margin-right: auto;
   }
-
-  .slide1 img {
-    width: 100%;
-    height: 360px;
-    margin-top: 25px;
-  }
-
+  
   .circles1 {
     position: absolute;
-    top: 390px;
+    top: 300px;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    height: 14px;
+    height: 40px;
     margin-left: auto;
     margin-right: auto;
     gap: 4%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: darkmagenta;
   }
-
+  
   .circle1 {
-    width: 13px;
-    height: 13px;
-    background-color: white;
+    width: 50px;
+    height: 33px;
+    background-color: rgb(255, 3, 3);
     border-radius: 50%;
     display: inline-block;
     margin: 0 5px;
     cursor: pointer;
-    border: 1px solid black;
-    margin-right: 10px;
+    border: 2px solid #511f52;
+    
   }
+  
 
   .aboutcontiner .p1 {
     width: 99%;
@@ -939,9 +932,5 @@
   .forms-div .submit:hover {
     background-color: #511f52;
     color: #fff;
-  }
-
-  #error {
-    display: none;
   }
 }
