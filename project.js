@@ -77,22 +77,20 @@ function openPopup(longDescription, titile, image, liveLink, sourceLink) {
     `;
   projectsContainer.appendChild(popup);
 }
-  
 projectData.forEach((project) => {
   const projectsElement = document.createElement('div');
   projectsElement.classList.add('projects-card');
-  
   projectsElement.innerHTML = `
     <img src="${project.image}">
     <h2>${project.titile}</h2>
     <p class="project-description">${project.description}</p>
     <button class="openPopupBtn">${project.button}</button>
     `;
-    projectsContainer.appendChild(projectsElement);
+  projectsContainer.appendChild(projectsElement);
   
-    // Add event listener to "See More" button
+  // Add event listener to "See More" button
     projectsElement.querySelector('.openPopupBtn').addEventListener('click', () => {
-      openPopup(project.longDescription, project.titile, project.image,project.liveLink, project.sourceLink);
-    });
+    openPopup(project.longDescription, project.titile, project.image,
+    project.liveLink, project.sourceLink);
   });
-  
+});
