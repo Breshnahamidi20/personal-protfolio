@@ -51,12 +51,7 @@ form.addEventListener('submit', (event) => {
         'Content-Type': 'application/json',
       },
     }).then((response) => {
-      if (response.ok) {
-        // Form successfully sent
-        localStorage.removeItem('formData'); // Clear local storage
-        console.log('Form submitted successfully!');
-        form.reset();
-      } else {
+      if (!response.ok) {
         errorMessage.style.display = 'block';
       }
     });
