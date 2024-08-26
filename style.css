@@ -528,7 +528,7 @@ header {
   text-align: center;
 }
 
-.lang-skill img {
+.skill-img {
   width: 110px;
 }
 
@@ -543,9 +543,9 @@ header {
   align-items: center;
 }
 
-.soft-skill div div div {
+.div2 {
   width: 165px;
-  height: 20px;
+  height: 18px;
   background-color: white;
   border-radius: 43px;
   border: 2px solid #511f52;
@@ -554,9 +554,9 @@ header {
   margin-bottom: 15px;
 }
 
-.soft-skill div div div div {
+.div3 {
   width: 120px;
-  height: 18px;
+  height: 21px;
   background-color: #511f52;
   border-radius: 43px 0 0 43px;
   text-align: center;
@@ -564,7 +564,7 @@ header {
   margin-top: -2.9px;
 }
 
-.soft-skill span {
+.skill-t {
   background: white;
   margin-bottom: 30px;
   font-size: large;
@@ -984,7 +984,7 @@ footer hr {
     right: 10px;
     width: 100%;
     max-width: 50%;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1217,7 +1217,7 @@ footer hr {
     text-shadow: -1px -1px 0 #511f52, 1px -1px 0 #511f52, -1px 1px 0 #511f52, 1px 1px 0 #511f52;
   }
 
-  .lang-skill img {
+  .skill-img {
     width: 195px;
     height: 195px;
   }
@@ -1240,7 +1240,7 @@ footer hr {
     background-color: #f9f5f9;
   }
 
-  .soft-skill div div div {
+  .div2 {
     width: 89%;
     height: 65px;
     background-color: white;
@@ -1251,18 +1251,18 @@ footer hr {
     margin-bottom: 35px;
   }
 
-  .soft-skill div div div div {
+  .div3 {
     width: 220px;
-    height: 65px;
+    height: 66px;
     background-color: #511F52;
     border-radius:   43px 0 0 43px;
     text-align: center;
     color: white;
-    margin-top: -2.9px;
+    margin-top: -2.4px;
     font-size: 40px;
   }
 
-  .soft-skill span {
+  .skill-t {
     background: #f9f5f9;
     margin-bottom: 30px;
     font-size: 40px;
