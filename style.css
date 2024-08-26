@@ -1397,10 +1397,6 @@ footer hr {
     justify-content: center;
   }
 
-  .project-card {
-    width: 700px;
-  }
-
   .project-see-more:hover {
     background: #511f52ad;
   }
@@ -1431,7 +1427,7 @@ footer hr {
   }
 
   .popup,
-  .popup3{
+  .popup3 {
     position: fixed;
     width: 100%;
     height: 60%;
