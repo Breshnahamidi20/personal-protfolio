@@ -87,10 +87,10 @@ projectData.forEach((project) => {
     <button class="openPopupBtn">${project.button}</button>
     `;
   projectsContainer.appendChild(projectsElement);
-  
+
   // Add event listener to "See More" button
-    projectsElement.querySelector('.openPopupBtn').addEventListener('click', () => {
+  projectsElement.querySelector('.openPopupBtn').addEventListener('click', () => {
     openPopup(project.longDescription, project.titile, project.image,
-    project.liveLink, project.sourceLink);
+  project.liveLink, project.sourceLink);
   });
 });
