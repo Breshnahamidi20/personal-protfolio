@@ -2,7 +2,7 @@ const form = document.getElementById('contactForms');
 const errorMessage = document.getElementById('errorMessage');
 
 // Load data from local storage
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const formData = JSON.parse(localStorage.getItem('formData'));
   if (formData) {
     document.getElementById('name').value = formData.name;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Save data to local storage when input changes
-form.addEventListener('input', function() {
+form.addEventListener('input', () => {
   const formData = {
     name: document.getElementById('name').value,
     lastname: document.getElementById('last-name').value,
@@ -28,7 +28,7 @@ form.addEventListener('input', function() {
 });
 
 // Form submit
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const formData = {
@@ -40,20 +40,21 @@ form.addEventListener('submit', function(event) {
     message: document.getElementById('message').value,
   };
 
-  if (formData.name && formData.lastname && formData.companyname && formData.email && formData.number && formData.message) {
+  if (formData.name && formData.lastname && formData.companyname && 
+    formData.email && formData.number && formData.message) {
     // Send form data using Formspree
     // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual endpoint
     fetch('https://formspree.io/YOUR_FORMSPREE_ENDPOINT', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       }
-    }).then(response => {
+    }).then( (response) => {
       if (response.ok) {
         // Form successfully sent
         localStorage.removeItem('formData'); // Clear local storage
-        alert('Form submitted successfully!');
+        window.alert('Form submitted successfully!');
         form.reset();
       } else {
         errorMessage.style.display = 'block';

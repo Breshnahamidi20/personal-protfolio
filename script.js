@@ -263,12 +263,11 @@ projectmData.forEach((projectm) => {
   });
 });
 
-
 const form = document.getElementById('contactForm');
 const errorMessage = document.getElementById('errorMessage');
 
 // Load data from local storage
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const formData = JSON.parse(localStorage.getItem('formData'));
   if (formData) {
     document.getElementById('name').value = formData.name;
@@ -278,23 +277,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Save data to local storage when input changes
-form.addEventListener('input', function() {
+form.addEventListener('input', () => {
   const formData = {
     name: document.getElementById('name').value,
     email: document.getElementById('email').value.toLowerCase(),
-    message: document.getElementById('message').value
+    message: document.getElementById('message').value,
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 });
 
 // Form submit
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const formData = {
     name: document.getElementById('name').value,
     email: document.getElementById('email').value.toLowerCase(),
-    message: document.getElementById('message').value
+    message: document.getElementById('message').value,
   };
 
   if (formData.name && formData.email && formData.message) {
@@ -304,9 +303,9 @@ form.addEventListener('submit', function(event) {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then(response => {
+        'Content-Type': 'application/json',
+      },
+    }).then( (response) => {
       if (response.ok) {
         // Form successfully sent
         localStorage.removeItem('formData'); // Clear local storage
