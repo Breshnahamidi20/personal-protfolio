@@ -309,7 +309,7 @@ form.addEventListener('submit', (event) => {
       if (response.ok) {
         // Form successfully sent
         localStorage.removeItem('formData'); // Clear local storage
-        ('Form submitted successfully!');
+        errorMessage.style.display = 'none';
         form.reset();
       } else {
         errorMessage.style.display = 'block';
