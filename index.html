@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css" >
+    <title>protfolio</title>
+</head>
+<body>
+  <div class=" main">
+    <div class="popup1" id="popup1">
+      <div class="popup1-content">
+          <span class="close1-btn" id="close1Btn">&times;</span>
+          <h1>Hi,I am Bershna <br>Web Developer</h1>
+  
+          <div class="slider">
+            <div class="slide actives"><img src="image/pro-6.jfif" alt="Image 1" class="slide-img"></div>
+            <div class="slide"><img src="image/pro-2.jfif" alt="Image 2" class="slide-img"></div>
+            <div class="slide"><img src="image/pro-3.jfif" alt="Image 3" class="slide-img"></div>
+            <div class="slide"><img src="image/pro-4.jfif" alt="Image 2" class="slide-img"></div>
+            <div class="slide"><img src="image/pro-5.jfif" alt="Image 3" class="slide-img"></div>
+            <div class="circles"></div>
+          </div>
+      </div>
+  </div>
+    <header>
+      
+      <h1>BreshnaHamidi</h1>
+      <nav id = nav-bar>
+        <div class = "mobile-menu desktop-menu" id="mobile-menu">
+          <image src="image/menu-img.png" id ="menuImg" class="menu-img">
+
+            
+      
+          <ul >
+            <li id="home"><a href ="index.html"  data-target="home" class="option-menu option-menu-1"><img src ="image/home.png" id="icon-menu">Home</a></li>
+            <div class="line"></div>
+            <li><a href ="about.html" class="option-menu  " data-target="about"><img src ="image/person.png" id="icon-menu" >About Me</a></li>
+            <div class="line"></div>
+            <li><a href = "project.html"  class="option-menu" data-target=""><img src ="image/Vector (1).png" id="icon-menu">projects</a></li>
+            <div class="line"></div>
+            <li><a href = "skills.html"  class="option-menu" data-target=""><img src ="image/skills.png" id="icon-menu">Skills</a></li>
+            <div class="line"></div>
+            <li><a href = "contact.html"  class="option-menu" data-target=""><img src ="image/phone.png" id="icon-menu">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class = "ham-menu" id="ham-menu">
+          <span ></span>
+          <span ></span>
+          <span ></span>
+        </div>
+      </nav>
+    </header>
+    <section id="home" class="home">
+      <div class="home-conitner">
+        <div class="image-div"><img src = "image/home-img.png" class="image-div-img"></div>
+        <div class="home-description">
+        <div class="short-interduce">
+          <h1>Hi, I am Breshna</h1>
+          <h2>Web Developer</h2>
+          <p>I specialize in creating responsive, user-friendly websites and captivating graphic designs. With a keen eye for detail and a passion for technology, I strive to deliver innovative and effective digital solutions.
+          </p>
+        </div>
+        <div id ="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100072788701860&mibextid=ZbWKwL"><img src = "image/fb-icon.png"></imge></a>
+          <a href="https://www.linkedin.com/in/breshna-hamidi-67699a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src = "image/in-icon.png"></imge></a>
+          <a href=" https://wa.me/message/L4LV3PM672H7P1 "><img src = "image/wsp icon.png"></imge></a>
+          <a href="https://github.com/Breshnahamidi20"><img src = "image/Gb-icon.png"></imge></a>
+        </div>
+        <div id="btn">
+          <button class="cv-btn" type="button"><a href="https://docs.google.com/presentation/d/1jMZkHxqcPT9Kqmo59sNw-JMlFXHVh2fq/edit?usp=drivesdk&ouid=104289975986628921258&rtpof=true&sd=true">Download Cv</a></button>
+          <button  onclick="hideShow()" class="read-btn" id="read-btn" type="button">Read More</button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div class="main1"  id="main1">
+      <section id = "about">
+        <div class= head-1>
+          <h2>About me</h2>
+          <p>Get to know me better</p>
+        </div>
+        <div class="about-div">
+        <div class="img-div-about">
+          <img src="image/profile-2.png" class="img-div-about-img">
+        </div>
+        <div class="p-cv">
+          <p>
+            My academic background includes English, Mathematics, Microsoft Office, and specialized training in Web and Graphic Design from AUAF. I've completed leadership and communication training through the Threads Course by ELEVATE and explored art therapy. I'm proficient in HTML, CSS, and JavaScript, having developed multiple web projects. With a CEL Certificate in English, I aim to blend my technical and creative skills to contribute to innovative solutions.
+            
+            </p>
+          <a href="https://docs.google.com/presentation/d/1jMZkHxqcPT9Kqmo59sNw-JMlFXHVh2fq/edit?usp=drivesdk&ouid=104289975986628921258&rtpof=true&sd=true" id="cv-link"><button type="button" id="cv-dwlod">Dowmload CV</button></a>
+        </div>
+      </div>
+      </section>
+      <section id="education" class="education">
+        <div class="certificate-page" id="certificate-page">
+          <h1>certificates</h1>
+    <p>Here are the list of my achivement</p>
+          <div class="certificate-continer" id="certificate-continer"></div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="skill-chart" id="skill-chart">
+          <h2>My Skills</h2>
+          <P >Explore What I Can Do!</P> 
+        <div class="skills-continer" id="skills-continer">
+          <div class="lang-skill">
+            <h1 class="hidden" >Languages</h1>
+            <img src="image/html-skill.png" class="skill-img">
+            <img src="image/css-skill.png" class="skill-img">
+            <img src="image/js-skill.png" class="skill-img">
+          </div>
+          <div class="soft-skill">
+            <div class="professionalskill">
+              <h1 class="hidden">professional Skill</h1>
+              <div class="div1">
+                <span class="skill-t">Team Work</span>
+                <div class="div2"><div id="TeamWork" class="div3">93%</div></div>
+              </div>
+              <div class="div1">
+                <span class="skill-t">Clean Code</span>
+                <div  class="div2"><div id="CleanCode"  class="div3">90%</div></div>
+              </div>
+              <div class="div1">
+                <span class="skill-t">code Review</span>
+                <div  class="div2"><div id="codeReview"  class="div3">80%</div></div>
+              </div>
+            </div>
+            <div class="softskill">
+              <h1 class="hidden">Soft Skills</h1>
+              <div  class="div1">
+                <span class="skill-t">Time Mangement</span>
+                <div  class="div2"><div id="TimeMangement"  class="div3">80%</div></div>
+              </div>
+              <div  class="div1">
+                <span class="skill-t">Multi Tasking</span>
+                <div  class="div2"><div id="MultiTasking"  class="div3">80%</div></div>
+              </div>
+              <div  class="div1">
+                <span class="skill-t">crisis Mangement</span>
+                <div  class="div2"><div id="crisisMangement"  class="div3">78%</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+      <section class="project" id="project">
+        <div class="project-list" id="project-list">
+          <h1>Project</h1>
+<p class="project-list-p">here are my project I have done it recently</P>
+          <div class="project-continer" id="project-continer"></div>
+        </div>
+
+        
+
+       
+
+       
+      </section>
+      <div class="more-project-div" id="more-project-div">
+        <div class="more-project" id="more-project">
+          
+        </div>
+      </div>
+      
+      <button onclick="hideShow1()" type="button" class="project-see-more" id="project-see-more">See More</button>
+  
+    <section id="contact-page" class="contact-page">
+        <h2>Let's Get in Touch</h2>
+      <p>I would always Love to hear from you</p>
+      <div class="form-contact">
+        <div class="form-div">
+          <h1>Contact me</h1>
+          
+    <form action="https://formspree.io/f/xldrbzga" method="post" id="contactForm" >
+      <label>Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" maxlength="30" required>
+      <label>Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <label>Message</label>
+      <textarea id="message" name="message" placeholder="Message" maxlength="500" required></textarea>
+      <button type="submit" class="submit" id="submit">Send</button>
+      <p id="errorMessage">Please fill out all fields correctly.</p>
+    </form>
+
+        </div>
+
+
+
+
+  
+
+
+
+
+        <div class="contact-me">
+          <h1>Feel free to contact me!</h1>
+          
+          <ul>
+            <li class="contact-me-li"> <img src="image/email.png" class="contact-me-img"><span class="contact-para">Email:<a href="" class="contact-me-a">breshna2004@gmail.com</a></span></li>
+            <li class="contact-me-li"><img src="image/phone-1.png" class="contact-me-img"> <span class="contact-para">Phone:<a href=""  class="contact-me-a">+93744723133</a></span> </li>
+            <li class="contact-me-li"> <img src="image/clock.png" class="contact-me-img"><span class="contact-para">08:00 MA-04:00 PM</span></li>
+          </ul>
+         
+
+        </div>
+      </div>
+      
+<div>
+</div>
+    </section>
+  </div>
+    <footer>
+      <div class ="social-media-footer" >
+        <a href="https://www.facebook.com/profile.php?id=100072788701860&mibextid=ZbWKwL"><img src = "image/fb-icon.png" class="social-media-footer-a-img"></a>
+        <a href="https://www.linkedin.com/in/breshna-hamidi-67699a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src = "image/in-icon.png" class="social-media-footer-a-img"></a>
+        <a href=" https://wa.me/message/L4LV3PM672H7P1 "><img src = "image/wsp icon.png" class="social-media-footer-a-img"></a>
+        <a href="https://github.com/Breshnahamidi20"><img src = "image/Gb-icon.png" class="social-media-footer-a-img" ></a>
+      </div>
+      <div class="myblog">
+        <p><a href="myblog.html" class="myblog-a">Click here</a>to explore the last of my blog</p>
+      </div>
+      <hr>
+    </footer>
+    </div>
+  </div>
+  
+  <script src = "script.js"></script>
+</body>
+
+</html>
+
