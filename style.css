@@ -12,7 +12,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0%;
-  font-family: 'Acme';
+  font-family: 'Acme', sans-serif;
 }
 
 header {
@@ -1463,7 +1463,7 @@ footer hr {
     width: 80%;
     height: 40px;
     margin-top: 30px;
-    gap:60px;
+    gap: 60px;
   }
 
   .popup-content a button {
@@ -1474,7 +1474,7 @@ footer hr {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   .popup-content button:hover {
     background-color: #aaa;
     color: #511f52;
